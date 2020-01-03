@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_total_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollar0"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:textSize="@dimen/_30sdp"
+        app:fontName="@string/orkney_bold"/>
+
+    <com.shopoholic.customviews.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_available_balance"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_16sdp"
+        app:fontName="@string/orkney_regular"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:background="@android:color/transparent"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@color/colorHintText"
+            app:tabMode="fixed" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</LinearLayout>

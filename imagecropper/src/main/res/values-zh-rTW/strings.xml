@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ImageCropper</string>
+    <string name="crop__saving">圖片儲存中…</string>
+    <string name="crop__wait">請稍候…</string>
+    <string name="crop__pick_error">沒有來源圖片可用</string>
+    <string name="crop__done">完成</string>
+    <string name="crop__cancel">取消</string>
+    <string name="image_action">完成行動</string>
+    <string name="crop_image_activity_title">修剪圖片	修剪圖片</string>
+    <string name="pickimage">選用圖片</string>
+    <string name="chooseFromGallery">從圖庫選擇</string>
+    <string name="takePicture">拍照片</string>
+    <string name="uploadPicture">上載圖片</string>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    app:contentInsetStart="0dp"
+    android:background="@drawable/toolbar_gradient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/_10ssp"
+            android:paddingStart="@dimen/_10sdp"
+            android:src="@drawable/ic_back"
+            android:visibility="gone"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13sdp"
+            app:fontName="@string/orkney_medium"
+            tools:text="@string/dummy_text"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone"
+            app:fontName="@string/orkney_medium"
+            android:text="@string/clear"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

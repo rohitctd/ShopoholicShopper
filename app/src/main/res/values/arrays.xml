@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="menu_items_image">
+        <item>@drawable/ic_buddy_side_menu_home_selected</item>
+        <item>@drawable/ic_buddy_side_menu_order_selected</item>
+        <item>@drawable/ic_shopper_side_menu_buddy_selected</item>
+        <item>@drawable/ic_buddy_side_menu_fans_selected</item>
+        <item>@drawable/ic_shopper_side_menu_wallet_selected_2</item>
+        <item>@drawable/ic_buddy_side_menu_chat_selected</item>
+        <item>@drawable/ic_shopper_side_menu_favourite_selected</item>
+        <item>@drawable/ic_shopper_menu_product_selected</item>
+        <item>@drawable/ic_shopper_menu_product_selected</item>
+        <item>@drawable/ic_buddy_side_menu_notification_selected</item>
+        //TO-DO : Change Image with kyc
+        <item>@drawable/ic_shopper_side_menu_wallet_selected_2</item>
+    </integer-array>
+
+    <integer-array name="menu_items_image_deselected">
+        <item>@drawable/ic_buddy_side_menu_home_deselected</item>
+        <item>@drawable/ic_buddy_side_menu_order_deselected</item>
+        <item>@drawable/ic_shopper_side_menu_buddy_deselected</item>
+        <item>@drawable/ic_buddy_side_menu_fans_deselected</item>
+        <item>@drawable/ic_shopper_side_menu_wallet_deselected_2</item>
+        <item>@drawable/ic_buddy_side_menu_chat_deselected</item>
+        <item>@drawable/ic_shopper_side_menu_favourite_deselected</item>
+        <item>@drawable/ic_shopper_side_menu_product_deselected</item>
+        <item>@drawable/ic_shopper_side_menu_product_deselected</item>
+        <item>@drawable/ic_buddy_side_menu_notification_deselected</item>
+        //TO-DO: change with kyc image
+        <item>@drawable/ic_shopper_side_menu_wallet_deselected_2</item>
+    </integer-array>
+
+</resources>

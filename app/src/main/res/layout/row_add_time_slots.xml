@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_time_slots"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_add_deal_timing"
+            android:gravity="center_vertical"
+            android:hint="@string/start_time"
+            android:longClickable="false"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorHintText"
+            android:textSize="@dimen/_8ssp"
+            app:fontName="@string/orkney_regular" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorSeparator" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableEnd="@drawable/ic_add_deal_timing"
+            android:gravity="center_vertical"
+            android:longClickable="false"
+            android:hint="@string/end_time"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorHintText"
+            android:textSize="@dimen/_8ssp"
+            app:fontName="@string/orkney_regular" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorSeparator" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete_row"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.2"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible"
+        android:src="@drawable/ic_add_deal_price_time_cross"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rl_card_payment"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:background="@drawable/ic_payment_card_bg_3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_11sdp">
+
+        <ImageView
+            android:id="@+id/iv_visa_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:src="@drawable/ic_visa_logo"
+            />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_visa_logo"
+            android:text="@string/card_number"
+            android:textAllCaps="true"
+            android:textColor="#b3ffffff"
+            android:textSize="@dimen/_8ssp"
+            app:fontName="@string/orkney_medium"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_user_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_card_number"
+            android:text="@string/dummy_card_no"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_12ssp"
+            app:fontName="@string/orkney_bold"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_card_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_card_number"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="@string/card_holder"
+            android:textAllCaps="true"
+            android:textColor="#b3ffffff"
+            android:textSize="@dimen/_8ssp"
+            app:fontName="@string/orkney_medium"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_card_holder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_card_holder"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_35sdp"
+            android:text="@string/dummy_card_name"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_11ssp"
+            app:fontName="@string/orkney_bold"
+            />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_expires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_user_card_number"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:text="@string/expires"
+            android:textAllCaps="true"
+            android:textColor="#b3ffffff"
+            android:textSize="@dimen/_8ssp"
+            app:fontName="@string/orkney_regular"
+            />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_expires"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_35sdp"
+            android:text="@string/dummy_card_date"
+            android:textColor="#ffffff"
+            app:fontName="@string/orkney_bold"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

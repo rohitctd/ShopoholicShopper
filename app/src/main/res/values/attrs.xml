@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarDateView">
+        <attr name="cbd_calendar_row" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CalendarLayout">
+        <attr name="calendar_type" format="enum">
+            <enum name="open" value="0" />
+            <enum name="fold" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

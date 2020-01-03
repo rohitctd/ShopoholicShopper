@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Amazon S3 Library</string>
+    <string name="file_not_found_for_send">File not found. It may be deleted or moved.</string>
+</resources>

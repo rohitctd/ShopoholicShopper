@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tutorials"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/pageIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/_8sdp"
+        app:ci_drawable="@drawable/ic_shoppers_login_active_page_indicator"
+        app:ci_drawable_unselected="@drawable/round_corner_white_bg" />
+
+    <LinearLayout
+        android:id="@+id/ll_signup_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <com.shopoholic.customviews.CustomButton
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/round_corner_white_bg"
+            android:text="@string/signup"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_12ssp"
+            app:fontName="@string/orkney_medium" />
+
+        <com.shopoholic.customviews.CustomButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/round_corner_pink_bg"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            app:fontName="@string/orkney_medium" />
+
+    </LinearLayout>
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/btn_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/round_corner_grey_stroke_transparent_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_25sdp"
+        android:paddingStart="@dimen/_25sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:text="@string/continue_as_guest"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_10ssp"
+        app:fontName="@string/orkney_regular" />
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/layout_login_toolbar" />
+
+    <FrameLayout
+        android:id="@+id/fl_create_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_toolbar"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_group_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_friend_placeholder"
+             android:layout_margin="@dimen/_2sdp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_friends_create"
+            android:padding="5dp"
+            android:layout_gravity="bottom|end"
+            tools:ignore="ContentDescription,RtlSymmetry"/>
+    </FrameLayout>
+
+    <com.shopoholic.customviews.CustomEditText
+        android:id="@+id/et_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@android:color/transparent"
+        android:layout_toEndOf="@+id/fl_create_image"
+        android:layout_below="@+id/layout_toolbar"
+        android:hint="@string/group_name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:lines="1"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:maxLength="25"
+        android:maxLines="3"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/colorHintText"
+        android:textSize="@dimen/_13ssp"
+        app:fontName="@string/orkney_regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/et_group_name"
+        android:layout_toEndOf="@+id/fl_create_image"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@color/colorSeparator" />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_add_participants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_participants"
+        android:textAllCaps="true"
+        android:textColor="@color/colorHintText"
+        android:textSize="@dimen/_10ssp"
+        app:fontName="@string/orkney_medium"
+        android:layout_below="@id/fl_create_image"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_15ssp"/>
+
+    <com.shopoholic.customviews.CustomEditText
+        android:id="@+id/et_search_participants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/tv_add_participants"
+        android:hint="@string/search_participants"
+        android:imeOptions="actionDone"
+        android:background="@drawable/search_text_box"
+        android:inputType="text"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:maxLines="1"
+        android:lines="1"
+        android:visibility="gone"
+        android:text=""
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/colorLightWhite"
+        android:textSize="@dimen/_10ssp"
+        app:fontName="@string/orkney_regular" />
+
+<!--
+    <HorizontalScrollView
+        android:id="@+id/sv_selected_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_below="@+id/et_search_participants">
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/fbl_selected_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        app:flexDirection="row"
+        app:flexWrap="wrap"
+        app:justifyContent="flex_start" />
+    </HorizontalScrollView>
+-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_selected_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_below="@+id/et_search_participants"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_below="@+id/rv_selected_friends">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <include
+            android:id="@+id/layout_no_data_found"
+            layout="@layout/layout_no_data_found"/>
+
+        <include
+            android:id="@+id/progressBar"
+            layout="@layout/layout_progress_bar"/>
+
+    </FrameLayout>
+<!--
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        android:layout_below="@+id/rv_participants"
+        android:background="@android:color/transparent"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/colorHintText"
+        app:tabMode="fixed" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:focusableInTouchMode="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+</RelativeLayout>

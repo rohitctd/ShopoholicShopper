@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingEnd="@dimen/_15sdp"
+    android:paddingTop="@dimen/_5sdp"
+    >
+
+    <Switch
+        android:id="@+id/st_all_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:switchPadding="@dimen/_10sdp"
+        android:text="@string/all_day"
+        android:clickable="false"
+        android:longClickable="false"
+        android:checked="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_10sdp" />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/round_corner_purple_stroke_transparent_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_13sdp"
+        android:paddingStart="@dimen/_13sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_10ssp"
+        tools:text="12/08/2018 - 20/08/2018" />
+
+    <com.shopoholic.customviews.CustomEditText
+        android:id="@+id/et_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        android:longClickable="false"
+        android:maxLength="20"
+        android:enabled="false"
+        android:clickable="false"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@color/colorHintText"
+        android:textSize="@dimen/_10ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@color/colorHintText" />
+
+</LinearLayout>

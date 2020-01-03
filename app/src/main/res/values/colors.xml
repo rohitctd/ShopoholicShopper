@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49155c</color>
+    <!--<color name="colorPrimaryDark">#49155c</color>-->
+    <color name="colorPrimaryDark">#2b1a4c</color>
+    <color name="colorAccent">#eb2d7d</color>
+    <color name="colorGreyBorder">#e3e3e3</color>
+    <color name="colorLightGrey">#ababab</color>
+    <color name="colorLighterGrey">#e2e2e2</color>
+    <color name="colorLightWhite">#fcfcfc</color>
+    <color name="colorLightPink">#5a3980</color>
+    <color name="colorPink">#ee2a7b</color>
+    <color name="colorBlue">#923dd2</color>
+    <color name="colorGreen">#00C062</color>
+    <color name="colorGrey">#f1f1f1</color>
+    <color name="colorPurple">#a163e7</color>
+    <color name="colorYellow">#f5d34d</color>
+    <color name="colorGrayish">#828282</color>
+    <color name="colorGreyText">#b5b5b5</color>
+    <color name="colorOrange">#f1ae3a</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="colorWhiteTransparent">#11ffffff</color>
+    <color name="colorTransparentWhite">#40fffefe</color>
+    <color name="colorLightGray">#636363</color>
+    <color name="colorLightPurple">#8e1a91</color>
+    <color name="colorDarkPurple">#2923a6</color>
+    <color name="colorButtonStart">#d9257d</color>
+    <color name="colorButtonEnd">#86277d</color>
+    <color name="colorButtonDeselectText">#ae60ae</color>
+    <color name="colorTextChange">#A51EA9</color>
+    <color name="colorBgGray">#F0F0F0</color>
+    <color name="colorBgDarkGray">#AFB4B2</color>
+    <color name="colorDate">#CDAEFF</color>
+
+    <color name="colorStartPink">#ff6a63</color>
+    <color name="colorEndPink">#ff2863</color>
+    <color name="colorUnavailable">#C6CCC8</color>
+    <color name="colorSelected">#ECD1FF</color>
+
+    <color name="colorMapMarker">#4d0000ff</color>
+    <color name="colorTextUnselected">#808080</color>
+    <color name="colorDialogDone">#B02DC4</color>
+    <color name="colorSignupLogin">#b02dc4</color>
+    <color name="colorDialogBackground">#70000000</color>
+    <color name="colorGradientCenter">#30000000</color>
+    <color name="colorHintText">#9b6cd0</color>
+    <color name="colorSeparator">#6a3da0</color>
+    <color name="colorSeparatorFilled">#ed2a7b</color>
+    <color name="colorForgotPassword">#aa7edd</color>
+    <color name="colorNoAccount">#f3f3f3</color>
+    <color name="colorMessageTitle">#49238e</color>
+    <color name="colorMessageText">#353535</color>
+    <color name="colorTabUnselected">#dabef9</color>
+    <color name="colorToolbarStart">#8c1991</color>
+    <color name="colorToolbarEnd">#231e91</color>
+    <color name="colorHomeLocation">#3f81db</color>
+    <color name="colorHomeSeparator">#d5d5d5</color>
+    <color name="colorPercentageText">#bfbfbf</color>
+    <color name="colorLocationCircle">#bbbfbfbf</color>
+    <color name="reject_orange">#ee6767</color>
+
+    <color name="colorBluePost">#49238e</color>
+    <color name="colorPinkPost">#eb2d7d</color>
+    <color name="colorPurplePost">#8c1991</color>
+    <color name="colorLightBluePost">#231e91</color>
+    <color name="colorLightPurplePost">#49238e</color>
+    <color name="colorLightPinkPost">#eb2d7d</color>
+
+</resources>

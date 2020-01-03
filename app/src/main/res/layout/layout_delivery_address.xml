@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/colorTransparentWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_purchaser_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_medium"
+            tools:text="@string/dummy_text"
+            />
+
+            <ImageView
+                android:id="@+id/iv_select_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_checkmark_selected"/>
+        </LinearLayout>
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_purchaser_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:lines="3"
+            android:maxLines="3"
+            android:minLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            app:fontName="@string/orkney_regular"
+            tools:text="@string/dummy_text_short"
+            />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_purchaser_phone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:lines="3"
+            android:maxLines="3"
+            android:minLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            app:fontName="@string/orkney_regular"
+            tools:text="@string/dummy_text"
+            />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

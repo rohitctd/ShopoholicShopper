@@ -1,0 +1,796 @@
+<resources tools:ignore="ExtraTranslation" xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="empty" />
+    <string name="app_name">Shopoholic</string>
+    <string name="dummy_text">Dummy text</string>
+    <string name="facebook_app_id">455869635214200</string>
+    <!--<string name="facebook_app_id">184373782351062</string>-->
+    <string name="continue_as_guest">继续用访客身份</string>
+    <string name="under_development">Under Development</string>
+    <string name="google_login_cancel">谷歌登入取消</string>
+    <string name="facebook_login_cancel">面书登入取消</string>
+    <string name="no_internet_connection">没有网络连接</string>
+    <string name="network_issue">网络问题! 请再试</string>
+    <string name="no_response_from_facebook">面书回应失败</string>
+    <string name="s_click_back_again_msg">请再点击返回退出</string>
+    <string name="gooogle_api_key">AIzaSyBDMR3FcchmUODoVCqVY080VpQ7M2hTMRQ</string>
+    <string name="crash_toast_text">Oops ! App crashed, send report to developers to help fix the issue !</string>
+    <string name="dummy_text_short">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="dummy_text_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!--fonts name-->
+    <string name="orkney_bold">Orkney Bold.ttf</string>
+    <string name="orkney_light">Orkney Light.ttf</string>
+    <string name="orkney_medium">Orkney Medium.ttf</string>
+    <string name="orkney_regular">Orkney Regular.ttf</string>
+
+
+    <!--Days for calendar-->
+    <string name="day_sun">日</string>
+    <string name="day_mon">一</string>
+    <string name="day_tue">二</string>
+    <string name="day_wed">三</string>
+    <string name="day_thu">四</string>
+    <string name="day_fri">五</string>
+    <string name="day_sat">六</string>
+
+    <!--Months in the calendar-->
+    <string name="month_january">1月</string>
+    <string name="month_feburary">2月</string>
+    <string name="month_march">3月</string>
+    <string name="month_april">4月</string>
+    <string name="month_may">5月</string>
+    <string name="month_june">6月</string>
+    <string name="month_july">7月</string>
+    <string name="month_august">8月</string>
+    <string name="month_september">9月</string>
+    <string name="month_october">10月</string>
+    <string name="month_november">11月</string>
+    <string name="month_december">12月</string>
+
+
+    <!--walkthrough screen string constants-->
+    <string name="walkthrough_page_one_title">得到令人兴奋的折扣</string>
+    <string name="walkthrough_page_two_title">在线或离线购物</string>
+    <string name="walkthrough_page_two_content">在线或离线购买产品和付款</string>
+    <string name="walkthrough_page_three_content">在线或离线购买产品和付款</string>
+    <string name="walkthrough_page_three_title">选择 Buddy 去运送产品到门前</string>
+    <string name="walkthrough_page_one_content">搜寻和探索交易去从特选产品拿取折扣</string>
+
+    <!--login constants-->
+    <string name="login">登入</string>
+    <string name="log_in">登入</string>
+    <string name="txt_email">电邮*</string>
+    <string name="password">密码*</string>
+    <string name="login_cancel">取消登入</string>
+    <string name="i_am_a_human">我是人类</string>
+    <string name="or_login_with">或用登入</string>
+    <string name="i_am_not_a_robot">我是机器人</string>
+    <string name="txt_phone_number">电话号码</string>
+    <string name="forgot_password">忘记密码?</string>
+    <string name="image_upload_fail">图片上载失败</string>
+    <string name="email_or_phone_no">电邮 或 电话号码*</string>
+    <string name="please_enter_email">电邮不能留空</string>
+    <string name="please_enter_password">密码不能留空</string>
+    <string name="please_enter_valid_last_name">请输入有效的姓氏</string>
+    <string name="please_enter_valid_email">请输入有效的电邮地址</string>
+    <string name="please_enter_valid_phone_no">请输入有效的电话号码</string>
+    <string name="please_enter_valid_first_name">请输入有效的名字</string>
+    <string name="don_t_have_an_account_sign_up">还未有帐号? 注册</string>
+    <string name="please_enter_3_char_first_name">名字必须至少有一个中文字</string>
+    <string name="please_check_not_a_robot">你是机器人. 你不能继续登入</string>
+    <string name="password_must_be_6_15_chars">密码可以有最少 6 个字符和最多 18 个字符</string>
+    <string name="please_enter_valid_email_or_phone_no">请输入有效的电邮地址或电话号码</string>
+
+    <!--countries-->
+    <string name="txt_uae">阿联酋</string>
+    <string name="txt_india">印度</string>
+    <string name="txt_macau">澳门</string>
+    <string name="txt_singapore">新加坡</string>
+    <string name="txt_hong_kong">香港</string>
+
+    <!--signup and signup complete dialog constants-->
+    <string name="done">完成</string>
+    <string name="name">姓名*</string>
+    <string name="camera">相机</string>
+    <string name="signup">注册</string>
+    <string name="uae">阿联酋 (+971)</string>
+    <string name="gallery">图库</string>
+    <string name="success">成功!</string>
+    <string name="india">印度 (+91)</string>
+    <string name="macau">澳门 (+853)</string>
+    <string name="last_name">姓氏</string>
+    <string name="first_name">名字*</string>
+    <string name="singapore">新加坡 (+65)</string>
+    <string name="hong_kong">香港 (+852)</string>
+    <string name="phone_number">电话号码*</string>
+    <string name="search_country">搜寻地区</string>
+    <string name="select_country">选择地区*</string>
+    <string name="txt_select_country">选择地区</string>
+    <string name="confirm_password">确定密码*</string>
+    <string name="please_enter_country">请选择地区</string>
+    <string name="please_select_an_image">请选择图片</string>
+    <string name="please_enter_last_name">请输入姓氏</string>
+    <string name="password_not_match">确认密码不一致</string>
+    <string name="please_select_one_country">选择一个地区</string>
+    <string name="please_enter_first_name">名字不能留空</string>
+    <string name="please_enter_phone_no">电话号码不能留空</string>
+    <string name="please_wait_image_loading">请稍候,图片载入中…</string>
+    <string name="please_enter_country_code">地区编号不能留空</string>
+    <string name="phone_no_must_be_7_15_digits">请输入 7 至 15 个数字的流动电话号码</string>
+    <string name="already_have_an_account_login">已经拥有帐号? 登入</string>
+
+    <!--forgot password and verify otp constants-->
+    <string name="email">电邮*</string>
+    <string name="resend_otp">重发</string>
+    <string name="send_otp">发送一次性密码</string>
+    <string name="enter_otp">输入一次性密码</string>
+    <string name="hint_enter_otp">输入一次性密码*</string>
+    <string name="forgot_password_title">忘记密码</string>
+    <string name="did_not_get_otp">没有收到一次性密码?</string>
+    <string name="account_verification">帐号验证</string>
+    <string name="incorrect_otp">一次性密码不正确, 请重试</string>
+    <string name="otp_resend_successfully">一次性密码重发成功</string>
+    <string name="enter_otp_message">请输入一次性密码发送于</string>
+    <string name="forgot_password_email_message">请输入电邮地址. 一次性密码将会被发送至此电邮地址用于重置密码</string>
+    <string name="forgot_password_phone_message">请输入电话号码. 一次性密码将会被发送至此电话号码用于重置密码</string>
+
+    <!--reset and change password constants-->
+    <string name="ok">确定</string>
+    <string name="submit">提交</string>
+    <string name="update">更新</string>
+    <string name="old_password">旧密码*</string>
+    <string name="new_password">新密码*</string>
+    <string name="reset_password">重置密码</string>
+    <string name="change_password">更改密码</string>
+    <string name="password_reset_successfully">重置密码成功</string>
+    <string name="password_changed_successfully">更改密码成功</string>
+    <string name="reset_password_message">请为你的帐号设置新密码</string>
+    <string name="signup_success_message">你已成功注册. 一次性密码已发送至你的电话号码而验证连结已发送至你的电邮</string>
+
+    <!--other information constants-->
+    <string name="skip">略过</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="other">其他</string>
+    <string name="gender">性别</string>
+    <string name="select_gender">选择性别</string>
+    <string name="location">位置</string>
+    <string name="anniversary">纪念日</string>
+    <string name="date_of_birth">出生日期</string>
+    <string name="select_date_of_birth">选择出生日期</string>
+    <string name="anniversary_date">纪念日期</string>
+    <string name="other_information">其他资料</string>
+    <string name="detect_my_location">侦测我的位置</string>
+
+    <!--card details constants-->
+    <string name="home">主页</string>
+    <string name="next">下一步</string>
+    <string name="welcome">欢迎</string>
+    <string name="send_reset_link">发送重置连结</string>
+
+    <!--categories screen constants-->
+    <string name="save">储存</string>
+    <string name="preferred_categories">首选的类别</string>
+    <string name="preferred_category">首选的类别</string>
+    <string name="please_select_at_least_one">请至少选择一项</string>
+    <string name="please_select_at_least_one_date">请选择最少一个日期</string>
+    <string name="please_select_at_least_one_slot">请选择最少一个时段</string>
+
+    <!--card and bank details constants-->
+    <string name="cvv">信用卡安全码 (CVV)</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="card_number">信用卡号码</string>
+    <string name="choose_bank">选择银行*</string>
+    <string name="card_details">信用卡资料</string>
+    <string name="save_and_next">储存 及 下一步</string>
+    <string name="account_number">帐户号码*</string>
+    <string name="bank_ifsc_code">银行汇款路线号码 (IFSC Code)*</string>
+    <string name="bank_account_details">银行帐户资料</string>
+
+    <!--launcher home fragment constants-->
+    <string name="popular_deals">受欢迎的交易</string>
+    <string name="category_based_deals">类别</string>
+    <string name="percentage_based_deals">按百分比</string>
+    <string name="special_offers">特别优惠</string>
+    <string name="product_based_deals">产品</string>
+    <string name="service_based_deals">服务</string>
+
+    <!--home activity constants-->
+    <string-array name="side_menu_items">
+        <item>主页</item>
+        <item>我的订单</item>
+        <item>我的 Buddy</item>
+        <item>我的朋友</item>
+        <item>我的钱包</item>
+        <item>对话</item>
+        <item>最爱</item>
+        <item>产品搜寻</item>
+        <item>产品搜寻</item>
+        <item>通知</item>
+    </string-array>
+    <string name="chat">对话</string>
+    <string name="my_buddy">我的 Buddies</string>
+    <string name="settings">设定</string>
+    <string name="my_orders">我的订单</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="favourites">最爱</string>
+    <string name="my_friends">我的朋友</string>
+    <string name="product_hunt">产品搜寻</string>
+    <string name="product_hunt_listing">产品搜寻清单</string>
+    <string name="notifications">通知</string>
+    <string name="view_all">查看所有</string>
+    <string name="available">有空</string>
+    <string name="posted_by">发布</string>
+    <string name="view_profile">查看简介</string>
+    <string name="all">所有</string>
+    <string name="custom">自订</string>
+    <string name="enable_permission">如要继续,请到系统设定允许此程式使用你的储存空间及位置</string>
+    <string name="enable_storage_permission">如要继续,请到系统设定允许此程式使用你的储存空间及位置</string>
+    <string name="enable_location_permission">如要继续,请到系统设定允许此程式使用你的储存空间及位置</string>
+    <string name="enable_contact_permission">如要继续,请到系统设定允许此程式使用你的通讯录</string>
+    <string name="my_profile">我的简介</string>
+    <string name="error">错误</string>
+    <string name="retry">重试</string>
+    <string name="accept">接受</string>
+    <string name="reject">拒绝</string>
+    <string name="remove_photo">移除图片</string>
+    <string name="update_photo">更新图片</string>
+    <string name="please_enter_confir_password">确定密码不能留空</string>
+    <string name="please_enter_otp">请输入一次性密码</string>
+    <string name="guest_user">访客用户</string>
+    <string name="details">详情</string>
+    <string name="product_images">产品图片</string>
+    <string name="select_color">选择颜色</string>
+    <string name="home_delivery_available">提供送交服务</string>
+    <string name="search_buddy">搜寻 Buddy</string>
+    <string name="product_availability">产品货量</string>
+    <string name="deal_posted">交易已发布</string>
+    <string name="deal_expiry">交易到期</string>
+    <string name="contact_merchant">联络商家</string>
+    <string name="contact_buddy">联络 Buddy</string>
+    <string name="merchant">商家</string>
+    <string name="buddy">Buddy</string>
+    <string name="buy_now">立刻买</string>
+    <string name="discount_post_string">% 减免</string>
+    <string name="yes">是</string>
+    <string name="no">不是</string>
+    <string name="address">地址</string>
+    <string name="text_address">地址*</string>
+    <string name="profile_phone_number">电话号码</string>
+    <string name="login_required">你必须登入才可继续执行这动作</string>
+    <!--<string name="authentication_required">必須认证</string>-->
+    <string name="authentication_required">认证</string>
+    <string name="phone_no_required">必须电话号码</string>
+    <string name="validate_phone_no">验证你的电话号码</string>
+    <string name="no_data_found">找不到资料</string>
+    <string name="active">使用中</string>
+    <string name="away">不在</string>
+    <string name="do_not_disturb">请勿打扰</string>
+    <string name="offline">离线</string>
+    <string name="profile_email">电邮</string>
+    <string name="edit">修改</string>
+    <string name="txt_address_line_1">地址 1*</string>
+    <string name="address_line_1">地址 1</string>
+    <string name="address_line_2">地址 2</string>
+    <string name="edit_profile">修改简介</string>
+    <string name="enter_new_phone_number">输入新电话号码</string>
+    <string name="online">在线</string>
+    <string name="slots_availability">可用时段</string>
+    <string name="in">在</string>
+    <string name="flat">定额</string>
+    <string name="off_on">% 减免 于</string>
+    <string name="na">没有</string>
+    <string name="delivery_by">运送</string>
+    <string name="delivery_address">运送地址</string>
+    <string name="change">更改</string>
+    <string name="proceed_to_pay">前往付款</string>
+    <string name="purchase_summary">购买摘要</string>
+    <string name="city">市*</string>
+    <string name="state">州*</string>
+    <string name="pincode">个人密码*</string>
+    <string name="payment">付款</string>
+    <string name="pay_now">现在付款</string>
+    <string name="total_amount_to_be_paid">应付总数</string>
+    <string name="saved_cards">已储存的信用卡</string>
+    <string name="add_new_card">加入新信用卡</string>
+    <string name="cash_on_delivery">货到付款</string>
+    <string name="cash_payment_text">你的货到付款要求将会由管理人处理.如果成功批核,你可在下次选择使用货到付款选项</string>
+    <string name="request_for_cod">要求货到付款</string>
+    <string name="dummy_card_no">**** **** **** 0956</string>
+    <string name="card_holder">持卡人</string>
+    <string name="expires">到期</string>
+    <string name="expire">已过期</string>
+    <string name="dummy_card_date">04/17</string>
+    <string name="dummy_card_name">DAVID LUIZ</string>
+    <string name="quantity">数量</string>
+    <string name="user_not_exists">用户没有空对话</string>
+    <string name="last_seen_on">上次上线于</string>
+    <string name="typing">打字中…</string>
+    <string name="dollar_sign">$</string>
+    <string name="group_not_exists">群组并不存在</string>
+    <string name="resend">重发</string>
+    <string name="seen">已看</string>
+    <string name="sent">已传送</string>
+    <string name="videos">影片</string>
+    <string name="images">图片</string>
+    <string name="add">加入</string>
+    <string name="country">地区*</string>
+    <string name="please_enter_valid_address">请输入有效地址</string>
+    <string name="please_enter_city">市不能留空</string>
+    <string name="please_enter_state">州不能留空</string>
+    <string name="enter_country">地区不能留空</string>
+    <string name="please_enter_pincode">个人密码不能留空</string>
+    <string name="please_enter_address">地址不能留空</string>
+    <string name="please_enter_quantity">数量不能留空</string>
+    <string name="quantity_greater_than_0">数量必需大于 0</string>
+    <string name="request">请求</string>
+    <string name="order_status">订单状况</string>
+    <string name="pending">订单待定中</string>
+    <string name="pending_status">待定中</string>
+    <string name="confirmed">已确定</string>
+    <string name="date_range">日期范围</string>
+    <string name="order_confirmed">订单已确定</string>
+    <string name="track">追踪</string>
+    <string name="shipped">已送出</string>
+    <string name="out_for_delivery">交付中</string>
+    <string name="rejected">已拒绝</string>
+    <string name="apply">使用</string>
+    <string name="discover_deals_near_you_in_miles">发现附近更多交易(在英里范围内)</string>
+    <string name="discover_deals_near_you_in_km">发现附近更多交易(在公里)</string>
+    <string name="auto">自动</string>
+    <string name="zero">0</string>
+    <string name="_4">4</string>
+    <string name="_8">8</string>
+    <string name="_12">12</string>
+    <string name="_16">16</string>
+    <string name="_20">20</string>
+    <string name="store_shop_name">商店/商铺名称</string>
+    <string name="search_for_your_favourite_shop_or_store">搜寻你最爱的商店或商铺</string>
+    <string name="category">类别</string>
+    <string name="choose_a_category">选择类别</string>
+    <string name="choose_a_sub_category">选择子类别</string>
+    <string name="discount_percentage">折扣百分比(%)</string>
+    <string name="expiry_date">到期日</string>
+    <string name="type_of_deal">交易种类</string>
+    <string name="product">产品</string>
+    <string name="service">服务</string>
+    <string name="both">两者皆是</string>
+    <string name="_90">90%</string>
+    <string name="your_order_has_been_placed">你的订单已完成</string>
+    <string name="please_share_this_qr_code">当订单交付完成,请与 Buddy 分享这个 QR 码</string>
+    <string name="order_details">订单详情</string>
+    <string name="order_no">订单编号</string>
+    <string name="order_date">订单日期</string>
+    <string name="search">搜寻</string>
+    <string name="clear">清除</string>
+    <string name="filters">筛选</string>
+    <string name="search_products_and_services">搜寻产品及服务</string>
+    <string name="txt_address">地址</string>
+    <string name="order_placed">已订购</string>
+    <string name="sorry_we_have">对不起我们有</string>
+    <string name="txt_available">有货</string>
+    <string name="profile">简介</string>
+    <string name="deals_posted">交易已发布</string>
+    <string name="deals_shared">交易已分享</string>
+    <string name="reviews">评语</string>
+    <string name="add_address">加入地址*</string>
+    <string name="_1">1</string>
+    <string name="share_deal">分享交易!</string>
+
+    <string-array name="percentages_list">
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="user_status">
+        <item>使用中</item>
+        <item>不在</item>
+        <item>请勿打扰</item>
+        <item>离线</item>
+    </string-array>
+
+    <string name="write_message">写下讯息</string>
+
+    <string name="dollar">$</string>
+    <string name="rupees">₹</string>
+    <string name="singapuri_dollar">S$</string>
+    <string name="txt_order_no">订单编号</string>
+    <string name="provide_rating">提交评分</string>
+    <string name="status_pending">待定中</string>
+    <string name="status_confirm">已确定</string>
+    <string name="status_shipped">已送出</string>
+    <string name="status_out_for_delivery">交付中</string>
+    <string name="status_delivered">已交付</string>
+    <string name="delivered">已交付</string>
+    <string name="status_cancel">已取消</string>
+    <string name="status_rejected">已拒绝</string>
+    <string name="order_placed_on">订购于</string>
+    <string name="delivered_on">交付于</string>
+    <string name="recent_searches">最近搜寻</string>
+    <string name="verify_otp">验证一次性密码</string>
+    <string name="change_phone_no">更改电话号码</string>
+    <string name="block">禁止</string>
+    <string name="report">报告</string>
+    <string name="unblock">解禁</string>
+    <string name="close_deal">完成交易</string>
+    <string name="make_an_offer">出价</string>
+    <string name="i_m_interested">我有兴趣</string>
+    <string name="my_offer_for_this_would_be">我的出价会是…</string>
+    <string name="sure_to_close_deal">你确定要完成此交易</string>
+    <string name="cancel">取消</string>
+    <string name="file_not_found">对不起,找不到你要求的档案</string>
+    <string name="deal_validity">交易有效期</string>
+    <string name="to">至</string>
+    <string name="file">档案</string>
+    <string name="sharing_from_cloud_not_supported">分享功能并不支援云端储存</string>
+    <string name="uable_to_select_pdf_please_try_again_later">不能选择 PDF 档, 请重试</string>
+    <string name="attributes">属性</string>
+    <string name="friends">朋友</string>
+    <string name="requests">请求</string>
+    <string name="contacts">通讯录</string>
+    <string name="about_us">关于我们</string>
+    <string name="terms_conditions">条款和条件</string>
+    <string name="privacy_policy">私隐政策</string>
+    <string name="verify_phone_no">验证电话号码</string>
+    <string name="start_date">开始日期</string>
+    <string name="end_date">结束日期</string>
+    <string name="search_participants">搜寻参与者</string>
+    <string name="add_participants">加入参与者</string>
+    <string name="group_name">群组名称</string>
+    <string name="txt_friends">朋友</string>
+    <string name="txt_buddies">Buddies</string>
+    <string name="unable_to_create_group_chat">错误: 不能建立群组对话</string>
+    <string name="please_enter_group_name">群组名称不能留空</string>
+    <string name="please_select_at_least_one_friend">请选择最少一个朋友</string>
+    <string name="filter_orders">筛选订单</string>
+    <string name="dollar0">0 积分</string>
+    <string name="total_available_balance">可用结余:</string>
+    <string name="paid">已付款</string>
+    <string name="receive">已收到</string>
+    <string name="create_group">建立群组</string>
+    <string name="leave_group">离开群组</string>
+    <string name="are_you_sure_to_leave_group">你确定要离开群组吗?</string>
+    <string name="leave">离开</string>
+    <string name="left">已离开</string>
+    <string name="are_typing">打字中…</string>
+    <string name="is_typing">打字中…</string>
+    <string name="txt_pending">待定中…</string>
+    <string name="will_deliver_your_order">将交付你的订单</string>
+    <string name="track_order">追踪订单</string>
+    <string name="rating">评分</string>
+    <string name="sort">姓名 (A-Z)</string>
+    <string name="invite">邀请</string>
+    <string name="invited">已邀请</string>
+    <string name="wants_to_be_your_friend">想和你成为朋友</string>
+    <string name="request_to">请求</string>
+    <string name="is_pending">待定中</string>
+    <string name="show_qr_code">出示 QR 码</string>
+    <string name="requested">已请求</string>
+    <string name="block_deal">禁止交易</string>
+    <string name="blocked_deals">已禁止交易</string>
+    <string name="sure_to_block_deal">你确定要禁止这项交易吗?</string>
+    <string name="unblock_deal">解禁交易</string>
+    <string name="sure_to_unblock_deal">你确定要解禁这项交易吗?</string>
+    <string name="why_report_deal">你为什么要举报这项交易?</string>
+    <string name="enter_your_text_here">在这里输入你的文字…</string>
+    <string name="rate_buddy">给 Buddy 评分</string>
+    <string name="rate_merchant">给商家评分</string>
+    <string name="write_review">写下评语</string>
+    <string name="your_review_here">你的评语在此</string>
+    <string name="biddy_assigned">已分配 Buddy</string>
+    <string name="biddy_not_assigned">没有 Buddy 接受你的请求</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload">上载</string>
+    <string name="upload_images">上载图片</string>
+    <string name="select_category">选择类别</string>
+    <string name="select_sub_category">选择子类别</string>
+    <string name="min_price">最低价格</string>
+    <string name="max_price">最高价格</string>
+    <string name="min">$0</string>
+    <string name="value">0</string>
+    <string name="max">$10000</string>
+    <string name="add_description">加入说明*</string>
+    <string name="please_enter_category">类别不能留空</string>
+    <string name="please_enter_sub_category">子类别不能留空</string>
+    <string name="please_enter_description">说明不能留空</string>
+
+    <!-- Setting screen string file -->
+    <string name="manage_bank_details">管理银行资料</string>
+    <string name="change_language">更改语言</string>
+    <string name="invite_friends">邀请朋友</string>
+    <string name="help">说明</string>
+    <string name="feedback_to_admin">意见反馈</string>
+    <string name="user_guide">用户指南</string>
+    <string name="faqs">常见问题</string>
+    <string name="legal">法律资讯</string>
+    <string name="terms_and_conditions">条款和条件</string>
+
+    <string name="copyright">版权</string>
+    <string name="local_information">位置资讯</string>
+    <string name="logout">登出</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="malyalm">Melayu</string>
+    <string name="Arebic">اردو</string>
+    <string name="chinees_trad">繁體中文</string>
+    <string name="chinees_simplefied">簡體中文</string>
+    <string name="edittext_hint">写下你的意见…</string>
+    <string name="tandc">条款和条件</string>
+
+    <string name="posted_by_me">由我发布</string>
+    <string name="shared_by_me">由我分享</string>
+    <string name="bookmarked">已加入书签</string>
+    <string name="my_deals">我的交易</string>
+    <string name="delivery_charges">运送费</string>
+    <string name="taxes">税项</string>
+    <string name="payment_mode">付款模式</string>
+    <string name="online_cash_on_delivery">在线支付/货到付款</string>
+    <string name="order_placed_summary">你的请求已被发送至</string>
+    <string name="order_placed_summary2">. 我们仍在等待他们的确认</string>
+    <string name="your_order_will_be_out_for_delivery_when_buddy_will_pick_the_order">当 Buddy 取货后, 你的订单将会被运送</string>
+    <string name="your_order_will_be_out_for_delivery_on_date">当 Buddy 取货后, 你的订单将会被运送. 预计运送日期是</string>
+    <string name="your_order_will_be_shipped_when_merchant_will_allocate_a_buddy">你的订单将会被送出</string>
+    <string name="km">公里</string>
+    <string name="m">米</string>
+    <string name="leave_this_group">离开这群组</string>
+    <string name="unable_to_fetch_location">不能取得位置. 请重试</string>
+    <string name="are_you_sure_to_block">你确定要禁止</string>
+    <string name="delete">删除</string>
+    <string name="order_placed_successfully">已订购成功</string>
+    <string name="out_of_stock">没有货</string>
+    <string name="your_order">你的订单</string>
+    <string name="please_enter_review">评语不能留空</string>
+    <string name="please_rate_merchant">请给商家评分</string>
+    <string name="please_rate_buddy">请给 Buddy 评分</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="sure_to_cancel_order">你确定要取消这订单吗?</string>
+    <string name="sure_to_clear_filter">你确定要清除筛选?</string>
+    <string name="per_day">(每日)</string>
+    <string name="select_slots">请选择最少一个时段</string>
+    <string name="no_slots_available">没有时段可用</string>
+    <string name="offer_not_set">出价仍未完成</string>
+    <string name="deal_closed">文易已完成</string>
+    <string name="unable_to_send_invite">不能发出邀请</string>
+    <string name="shopper_home">买家主页</string>
+    <string name="please_rate_merchant_buddy">请给商家或Buddy评分</string>
+    <string name="posted_on">发布于:</string>
+    <string name="txt_images">图片</string>
+    <string name="please_enter_price_range">请选择价格范围ge</string>
+
+    <string name="_yes">是</string>
+    <string name="_no">不是</string>
+    <string name="are_you_sure_you_want_to_logout">你确定要登出吗?</string>
+    <string name="share_app">分享流动应用程式</string>
+    <string name="share_app_message">\n我建议你这个应用程序\n\nhttps://play.google.com/store/apps/details?id=com.shopoholic \n\n</string>
+    <string name="photos">图片</string>
+    <string name="files">档案</string>
+    <string name="shopper">买家</string>
+    <string name="please_give_feedback">请提供意见反馈</string>
+    <string name="stores">商店/商铺</string>
+    <string name="to_send_msg">发送讯息</string>
+    <string name="select_image">选择图片</string>
+    <string name="search_shops_or_stores">搜寻商店或商铺</string>
+    <string name="select_video">选择影片</string>
+    <string name="sure_to_block">你确定要禁止</string>
+    <string name="delete_msg">删除讯息</string>
+    <string name="sure_to_delete_msg">你确定要删除这讯息吗?</string>
+    <string name="session_expire">使用期限已过</string>
+    <string name="session_expire_message">你已被登出因有人刚使用同一帐号登入, 请联络管理人如果不是你刚登入</string>
+    <string name="max_5_images_allowed">最多只能上载 5 张图片</string>
+    <string name="max_5">(最多 5 张图片)</string>
+    <string name="empty_search_message">你仍未加入任何产品或服务以供搜寻</string>
+    <string name="sub_category">子类别</string>
+    <string name="sub_categories">子类别</string>
+    <string name="please_select_category_first">请先选择类别</string>
+    <string name="counter">反</string>
+    <string name="i_m_interested_in_buying_this">我有兴趣购买这个</string>
+    <string name="please_enter_offer">出价不能留空</string>
+    <string name="please_enter_message">讯息不能留空</string>
+    <string name="please_enter_delivery_date">运送日期不能留空</string>
+    <string name="offer_accepted">你的出价已被接受. 这个出价在 6 小时内有效. 请完成交易并购买此项目</string>
+    <string name="offer_rejected">你的出价已被拒绝</string>
+    <string name="blocked">用户已被禁止</string>
+    <string name="blocked_by_admin">你已被管理人禁止</string>
+    <string name="deleted">用户已被删除</string>
+    <string name="deleted_by_admin">你已被管理人删除</string>
+    <string name="per_off">% 扣减</string>
+    <string name="please_enter_start_date">请先输入开始日期</string>
+    <string name="please_enter_end_date">请先输入结束日期</string>
+    <string name="please_enter_address_first">请先输入地址</string>
+    <string name="per_hour">/小时</string>
+    <string name="txt_per_hour">每小时</string>
+    <string name="slots">时段</string>
+    <string name="accept_offer">接受出价</string>
+    <string name="reject_offer">拒绝出价</string>
+    <string name="counter_offer">还价</string>
+    <string name="i_would_like_to_buy_it_for">我想还价</string>
+    <string name="offer_limit">这个出价在 6 小时内有效. 请完成交易并购买此项目</string>
+    <string name="sure_want_to_accept_offer">你确定要接受出价</string>
+    <string name="sure_want_to_reject_offer">你确定要拒绝出价吗?</string>
+    <string name="left_group">已离开</string>
+    <string name="buddy_home">Buddy 主页</string>
+    <string name="please_upload_image">请上载最少一张图片</string>
+    <string name="deal_started">文易已开始</string>
+    <string name="select_mode">选择模式</string>
+    <string name="fixed">固定</string>
+    <string name="estimate_delivery_date">预计运送日期是</string>
+    <string name="category_and_sub_category">类别和子类别</string>
+    <string name="price_range">价格范围</string>
+    <string name="description">说明</string>
+    <string name="hunt_details">搜寻详情</string>
+    <string name="you_have_received_a_new_notification">你已经收到一个新通知</string>
+    <string name="hunt_request">新的狩猎请求来自</string>
+    <string name="your_order_for">你的订单</string>
+    <string name="new_order">您有新的订单请求</string>
+    <string name="addad_new_deal">已加入新交易</string>
+    <string name="no_nearby_buddy_available">附近没有 Buddy 可履行你的请求</string>
+    <string name="confirm_order">已确认您的订单</string>
+    <string name="shipped_order">已经寄出</string>
+    <string name="out_for_delivery_order">出去送货</string>
+    <string name="delivered_order">已成功交付</string>
+    <string name="reject_order">拒绝了您的订单</string>
+    <string name="no_buddy_accept_request">没有 Buddy 接受你的请求</string>
+    <string name="canceled_order">已取消您的订单</string>
+    <string name="file_not_found_for_send">找不到档案. 可能已被删除或移除.</string>
+    <string name="oops">哎呀</string>
+    <string name="select_one_store">请选择一间或以上商店再继续</string>
+    <string name="price">价格*</string>
+    <string name="price_per_day">价格 (每日)*</string>
+    <string name="set_price_time_duration">设定时间,价格 (每日),和持续时间</string>
+    <string name="all_day">全日</string>
+    <string name="duration">持续时间</string>
+    <string name="recursive_slot">重覆时段</string>
+    <string name="cannot_select_all_day">你不能全日工作因你已被加入 1 个时段</string>
+    <string name="no_time_available">没有时段可用</string>
+    <string name="time_slots">时段</string>
+    <string name="entered_slots_overlaping">输入的时段已重复</string>
+    <string name="all_day_available">24 小时可用</string>
+    <string name="request_details">请求详情</string>
+    <string name="remove">移除</string>
+    <string name="email_not_verified">Y你的电邮未经验证. 请验证</string>
+    <string name="resend_link">重发连结</string>
+    <string name="please_enter_email_address">请在简介提供电邮地址用以接受请求</string>
+    <string name="please_enter_phone_number">请在简介提供电邮地址用以接受请求</string>
+    <string name="json_parsing_error">解析错误! 请检查</string>
+    <string name="something_went_wrong">有些不对劲! 请再试一次</string>
+    <string name="delete_message">删除讯息</string>
+    <string name="added">加入</string>
+    <string name="created_group">建立群组</string>
+    <string name="call">拨号</string>
+    <string name="unable_to_get_currency">对不起,我们找不到货币.请再试. 如果这问题持续,请重新启动你的手机</string>
+    <string name="delete_chat">删除对话</string>
+    <string name="txt_price">价格:</string>
+    <string name="read_more">查看更多…</string>
+    <string name="read_less">查看较少…</string>
+    <string name="deal_start">文易开始</string>
+    <string name="no_home_delivery">这个商家没有为这产品提供送交服务. 你可以在购买后于订单详情中选择使用你的 Buddy</string>
+    <string name="points">积分</string>
+    <string name="combination_not_valid">这个组合没有效</string>
+    <string name="search_contact">搜寻联络人</string>
+    <string name="select_slot">选择时段</string>
+    <string name="deal_not_start_yet">交易仍未开始</string>
+    <string name="amount_cant_be_zero">数额不能为 0</string>
+    <string name="sure_to_show_code">你确定你的 Buddy 已完成在所有日期提供的服务吗?</string>
+    <string name="rating_and_review">评分和评语</string>
+    <string name="please_provide_email_address">请先提供电邮地址</string>
+    <string name="wiil_be_delivered_by_buddy">产品将会由已分配的 Buddy 运送</string>
+    <string name="_10000">99999</string>
+    <string name="min_must_lass_than_max">最低价格必须少于最高价格</string>
+    <string name="images_loading_please_wait">图片正在上载,请稍候…</string>
+
+
+    <!--todo..............-->
+    <string name="send_friend_request">发出一个新的朋友请求</string>
+    <string name="accept_friend_request">已接受您的朋友请求</string>
+    <!--product hunt-->
+    <string name="fetching_location">获取位置...</string>
+    <string name="validity">有效日期</string>
+    <string name="txt_start_date">开始日期</string>
+    <string name="txt_end_date">结束日期</string>
+    <string name="add_time_slots">增加时段</string>
+    <string name="add_slots">加设时段</string>
+    <string name="please_enter_price">价钱不能留空</string>
+    <string name="yesterday">昨天</string>
+    <string name="buddies_type">Buddy 种类</string>
+    <string name="select_buddies">选择 Buddy</string>
+    <string name="send_request_to">发送请求到</string>
+    <string name="followed_buddies">已追随 Buddies</string>
+    <string name="followed_worked_buddies">已追随及曾使用的 Buddies</string>
+    <string name="nearby_buddies">在附近 Buddy</string>
+    <string name="please_enter_buddy_type">Buddy 类型不能留空</string>
+    <string name="please_select_buddy_type">请选择 Buddy 种类</string>
+    <string name="please_enter_target_area">目标区域不能留空</string>
+    <string name="please_enter_expected_date">预计运送日期不能留空</string>
+    <string name="please_enter_slots">插槽不能留空</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束日期</string>
+    <string name="delivery_date">邮寄日期:</string>
+    <string name="bidding_price">投标价格</string>
+    <string name="select_buddy">选择 Buddy</string>
+    <string name="unable_to_make_payment">系统错误：不能够完成付款交易</string>
+    <string name="target_area">目标区域</string>
+    <string name="add_target_area">加入目标区域*</string>
+    <string name="expected_delivery_date">预计运送日期</string>
+    <string name="followed">已追随</string>
+    <string name="worked">曾使用</string>
+    <string name="nearby">在附近</string>
+    <string name="buddies_have">buddy 有</string>
+    <string name="buddy_has">buddy 具有</string>
+    <string name="accepted_request">要求已被接立</string>
+    <string name="accepted_hunt_request">已接受您的请求</string>
+    <string name="rejected_hunt_request">已拒绝您的请求</string>
+    <string name="buddy_list">Buddy 名单</string>
+    <string name="buddy_listing">Buddy 名单</string>
+    <string name="unsupport_file">不支援的档案类型</string>
+    <string name="reshared_buddy_count">转发 Buddy 数量:</string>
+
+    <string name="shopoholic_wallet">Shopoholic 钱包</string>
+    <string name="choose_another_option_to_complete_the_payment">请选择其他付款服务方式</string>
+    <string name="select_option_to_pay">请选择其中一项付款服务</string>
+    <string name="points_summary">累积分数总结</string>
+    <string name="available_points_for">可累积分数</string>
+    <string name="wallet_not_applied">钱包余额不适用于货到付款服务</string>
+    <string name="order_in">订购</string>
+    <string name="helpline_number">支援服务号码</string>
+    <string name="total_tax">总税项</string>
+    <string name="price_high_to_low">价格(由高至低）</string>
+    <string name="price_low_to_high">价格(由低至高）</string>
+    <string name="rating_high_to_low">评分(由高至低)</string>
+    <string name="rating_low_to_high">评分(由低至高)</string>
+    <string name="newest_first">由新至旧</string>
+    <string name="oldest_first">由旧至新</string>
+
+    <string name="unable_to_get_location">抱歉，我们无法获取该位置请重试如果此问题仍然存在请重新启动手机</string>
+    <string name="provide_address_in_profile">请在简介提供地址</string>
+    <string name="address_not_editable">地址不能再作修改因为你的订单正在处埋中</string>
+    <string name="miles">万里</string>
+    <string name="wallet_and">钱包和</string>
+    <string name="alipay">支付宝</string>
+    <string name="paytm">Paytm</string>
+    <string name="wallet">钱包</string>
+    <string name="cod">COD</string>
+    <string name="hunt_name">搜寻名称</string>
+    <string name="please_enter_hunt_name">搜寻名称不能留空</string>
+    <string name="hunt_closed">此项搜寻已被关闭</string>
+    <string name="expected_delivery_charge">预计运费</string>
+    <string name="please_enter_expected_charges">预计运费不能留空</string>
+    <string name="cannot_decrease_price">您不能降低运费</string>
+    <string name="sure_to_delete_hunt">您的電子郵件未經過驗證。請驗證</string>
+    <string name="add_delivery_address">添加送货地址*</string>
+    <string name="locations">地点</string>
+    <string name="enable_call_permission">要继续前进请转到设置并允许我们访问您的电话</string>
+    <string name="feedback_shared_with_admin">你的意见已被发送给我们的专员,我们将会尽快回覆</string>
+    <string name="terms_msg">通过点击注册,您同意我们</string>
+    <string name="cant_book_past_slot">你所预约时间要求已超过系统设定</string>
+    <string name="new_version_available">有可用的新版本</string>
+    <string name="upgrade_to_new_version">请更新应用程式感受最新体验</string>
+    <string name="no_thanks">不用、​​谢谢</string>
+
+    <string name="menu_hint">Detailed Menu option for you</string>
+    <string name="search_hint">Search for specific deal or product</string>
+    <string name="map_hint">Map View to visualize the deals per area</string>
+    <string name="filter_hint">Detail Filter Options here</string>
+    <string name="product_hint">All the special Product deals</string>
+    <string name="offer_hint">Special high discounted deals</string>
+    <string name="service_hint">All the skilled services section for you to search the best service as per your need</string>
+    <string name="location_hint">Change the location by tapping on this</string>
+    <string name="category_hint">Tap here to see the categories easy view</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us_and_faqs">About Us And FAQs</string>
+    <string name="cancellation_policy">Cancellation Policy</string>
+    <string name="you_can_reach_us_at">You can reach us at :-</string>
+    <string name="wework_32_milestone_the_galaxy_hotel_nh8_sector_15_gurugram_hr_122001">WeWork, 32 Milestone, The Galaxy Hotel NH8, Sector 15, Gurugram, HR-122001</string>
+    <string name="helpme_shopoholicbuddy_com">helpme@shopoholicbuddy.com</string>
+    <string name="kyc">KYC</string>
+
+</resources>

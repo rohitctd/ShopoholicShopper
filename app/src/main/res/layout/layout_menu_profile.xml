@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_menu_profile"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_130sdp"
+    android:background="@drawable/ic_side_menu_slant_element"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_25sdp"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    >
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fl_profile"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:background="@android:color/transparent"
+        android:foregroundGravity="center_horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic_side_menu_user_placeholder"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="@dimen/_2sdp" />
+
+        <View
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/round_corner_white_bg" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_toEndOf="@id/fl_profile"
+        android:layout_toStartOf="@+id/iv_setting"
+        android:orientation="vertical">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16ssp"
+            app:fontName="@string/orkney_bold"
+            tools:text="@string/dummy_text" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/view_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:clickable="false"
+            android:drawableEnd="@drawable/ic_buddy_profile_arrow"
+            android:drawablePadding="@dimen/_5sdp"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="@string/view_profile"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_12ssp"
+            app:fontName="@string/orkney_bold" />
+
+        <com.whinc.widget.ratingbar.RatingBar
+            android:id="@+id/rb_buddy_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rb_max_count="5"
+            app:rb_count="0"
+            app:rb_empty="@drawable/ic_my_order_rating_unfilled"
+            app:rb_fill="@drawable/ic_my_order_rating"
+            app:rb_space="@dimen/_5sdp"
+            android:visibility="gone"
+            app:rb_click_rating="false"
+            app:rb_touch_rating="false"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:src="@drawable/ic_buddy_setting_ic"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/iv_verify_email"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_alignBottom="@+id/ll_user"
+        android:layout_alignStart="@+id/iv_setting"
+        android:layout_alignEnd="@+id/iv_setting"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:src="@drawable/ic_resend"
+        tools:ignore="ContentDescription"
+        android:visibility="gone"/>
+
+</RelativeLayout>

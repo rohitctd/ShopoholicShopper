@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_notification"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_5sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/_8sdp"
+        android:layout_height="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@color/colorAccent"
+        tools:ignore="ContentDescription"/>
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_notification_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12ssp"
+        android:layout_toEndOf="@id/iv_icon"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/you_have_received_a_new_notification"
+        android:textColor="@color/colorLightWhite"
+        app:fontName="@string/orkney_bold"
+        />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/dummy_text"
+        android:textColor="@color/colorLightWhite"
+        android:textSize="@dimen/_10ssp"
+        android:layout_toEndOf="@id/iv_icon"
+        app:fontName="@string/orkney_regular"
+        android:layout_below="@id/tv_notification_message"
+        android:layout_marginEnd="@dimen/_10sdp"/>
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/dummy_text"
+        android:textSize="@dimen/_9sdp"
+        android:textColor="@color/colorLightWhite"
+        android:layout_toEndOf="@id/iv_icon"
+        app:fontName="@string/orkney_regular"
+        android:layout_below="@id/tv_notification"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+</RelativeLayout>

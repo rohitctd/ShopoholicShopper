@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_20sdp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/_3sdp"
+    app:contentPadding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        tools:ignore="RtlSymmetry">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/skip"
+            android:textAllCaps="true"
+            android:textColor="#686868"
+            android:textSize="@dimen/_10ssp"
+            app:fontName="@string/orkney_regular" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/rate_buddy"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13ssp"
+            app:fontName="@string/orkney_bold" />
+
+        <!--
+                <RatingBar
+                    android:id="@+id/rb_rate_buddy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp" />
+        -->
+        <com.whinc.widget.ratingbar.RatingBar
+            android:id="@+id/rb_rate_buddy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:rb_click_rating="true"
+            app:rb_count="0"
+            app:rb_empty="@drawable/ic_rate_star_unfilled"
+            app:rb_fill="@drawable/ic_rate_star_filled"
+            app:rb_max_count="5"
+            app:rb_space="@dimen/_15sdp"
+            app:rb_touch_rating="true" />
+
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_rate_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/rate_merchant"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13ssp"
+            app:fontName="@string/orkney_bold" />
+
+        <!--
+                <RatingBar
+                    android:id="@+id/rb_rate_merchant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp" />
+        -->
+        <com.whinc.widget.ratingbar.RatingBar
+            android:id="@+id/rb_rate_merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:rb_click_rating="true"
+            app:rb_count="0"
+            app:rb_empty="@drawable/ic_rate_star_unfilled"
+            app:rb_fill="@drawable/ic_rate_star_filled"
+            app:rb_max_count="5"
+            app:rb_space="@dimen/_15sdp"
+            app:rb_touch_rating="true" />
+
+
+        <com.shopoholic.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/write_review"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13ssp"
+            app:fontName="@string/orkney_bold" />
+
+        <com.shopoholic.customviews.CustomEditText
+            android:id="@+id/et_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:hint="@string/your_review_here"
+            android:maxLength="250"
+            android:maxLines="3"
+            android:lines="3"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/black"
+            android:gravity="start"
+            android:minLines="1"
+            android:textSize="@dimen/_10ssp"
+            app:fontName="@string/orkney_regular"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:background="@drawable/black_overlay" />
+
+        <include layout="@layout/layout_button_loader" />
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

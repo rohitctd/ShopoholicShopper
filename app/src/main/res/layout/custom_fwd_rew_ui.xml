@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@id/exo_ffwd"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center_vertical|end"
+        android:src="@drawable/ic_video_rotate_right"
+        android:layout_marginEnd="20dp"
+        style="@style/ExoMediaButton.FastForward"
+        />
+    <ImageView
+        android:id="@id/exo_rew"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_video_rotate_left"
+        style="@style/ExoMediaButton.Rewind"
+        />
+</FrameLayout>

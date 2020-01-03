@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+        <include
+            layout="@layout/layout_menu_profile"
+            android:id="@+id/layout_menu_profile"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_menu_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:nestedScrollingEnabled="false"
+            tools:targetApi="lollipop" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_sorting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_newest_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:button="@drawable/custom_radio_button"
+                    android:checked="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/newest_first"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0.05dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorSeparator" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_oldest_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:button="@drawable/custom_radio_button"
+                    android:textSize="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/oldest_first"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/colorSeparator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_price_high_low"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:button="@drawable/custom_radio_button"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/price_high_to_low"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0.05dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorSeparator" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_price_low_high"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:button="@drawable/custom_radio_button"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/price_low_to_high"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/colorSeparator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_rating_high_low"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:button="@drawable/custom_radio_button"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/rating_high_to_low"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0.05dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorSeparator" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_rating_low_high"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:button="@drawable/custom_radio_button"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/rating_low_to_high"
+                    android:textColor="@android:color/white" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.05dp"
+            android:background="@color/colorSeparator" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_recycle_view"/>
+
+</LinearLayout>

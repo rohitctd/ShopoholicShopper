@@ -1,0 +1,775 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+
+    <string name="empty" />
+    <string name="app_name">Shopoholic</string>
+    <string name="dummy_text">Dummy text</string>
+    <string name="facebook_app_id">893615001054278</string>
+    <!--<string name="facebook_app_id">184373782351062</string>-->
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="under_development">Under Development</string>
+    <string name="google_login_cancel">Google login cancel</string>
+    <string name="facebook_login_cancel">Facebook login cancel</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="network_issue">Network Issue! Please try again</string>
+    <string name="no_response_from_facebook">Facebook response fail</string>
+    <string name="s_click_back_again_msg">Please click BACK again to exit</string>
+    <string name="gooogle_api_key">AIzaSyBDMR3FcchmUODoVCqVY080VpQ7M2hTMRQ</string>
+    <string name="crash_toast_text">Oops ! App crashed, send report to developers to help fix the issue !</string>
+    <string name="dummy_text_short">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="dummy_text_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <!--fonts name-->
+    <string name="orkney_bold">Orkney Bold.ttf</string>
+    <string name="orkney_light">Orkney Light.ttf</string>
+    <string name="orkney_medium">Orkney Medium.ttf</string>
+    <string name="orkney_regular">Orkney Regular.ttf</string>
+
+
+    <!--Days for calendar-->
+    <string name="day_sat">Sat</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_mon">Mon</string>
+    <string name="day_sun">Sun</string>
+
+    <!--Months in the calendar-->
+    <string name="month_january">January</string>
+    <string name="month_december">December</string>
+    <string name="month_feburary">February</string>
+    <string name="month_march">March</string>
+    <string name="month_april">April</string>
+    <string name="month_may">May</string>
+    <string name="month_june">June</string>
+    <string name="month_july">July</string>
+    <string name="month_august">August</string>
+    <string name="month_september">September</string>
+    <string name="month_october">October</string>
+    <string name="month_november">November</string>
+
+
+    <!--walkthrough screen string constants-->
+    <string name="walkthrough_page_one_title">Get Exciting Discount</string>
+    <string name="walkthrough_page_two_title">Buy products online or offline</string>
+    <string name="walkthrough_page_two_content">Buy and pay for products online or offline.</string>
+    <string name="walkthrough_page_three_content">Buy and pay for products online or offline.</string>
+    <string name="walkthrough_page_three_title">Choose buddy and get the \n product at your doorstep.</string>
+    <string name="walkthrough_page_one_content">Search and explore deals to \n grab discounts on selected products.</string>
+
+    <!--login constants-->
+    <string name="login">Login</string>
+    <string name="log_in">LOGIN</string>
+    <string name="txt_email">Email</string>
+    <string name="password">Password*</string>
+    <string name="login_cancel">Login Cancel</string>
+    <string name="i_am_a_human">I am a human</string>
+    <string name="or_login_with">Or Login With</string>
+    <string name="i_am_not_a_robot">I am a robot</string>
+    <string name="txt_phone_number">Phone Number</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="image_upload_fail">Image upload Failed</string>
+    <string name="email_or_phone_no">Email or Phone Number*</string>
+    <string name="please_enter_email">Email can\'t be left blank</string>
+    <string name="please_enter_password">Password can\'t be left blank</string>
+    <string name="please_enter_valid_last_name">Please enter valid last name</string>
+    <string name="please_enter_valid_email">Please enter valid email address</string>
+    <string name="please_enter_valid_phone_no">Please enter valid phone number</string>
+    <string name="please_enter_valid_first_name">Please enter valid first name</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account?&#160;&#160;SIGN UP</string>
+    <string name="please_enter_3_char_first_name">First name must be at least 3 characters long</string>
+    <string name="please_check_not_a_robot">You are a robot. You can\'t proceed further to Login</string>
+    <string name="password_must_be_6_15_chars">Password can be minimum 6 characters and maximum 18 characters</string>
+    <string name="please_enter_valid_email_or_phone_no">Please enter valid email address or phone number</string>
+
+    <!--countries-->
+    <string name="txt_uae">UAE</string>
+    <string name="txt_india">India</string>
+    <string name="txt_macau">Macau</string>
+    <string name="txt_singapore">Singapore</string>
+    <string name="txt_hong_kong">Hong Kong</string>
+
+    <!--signup and signup complete dialog constants-->
+    <string name="done">Done</string>
+    <string name="name">Name*</string>
+    <string name="camera">Camera</string>
+    <string name="signup">SIGN UP</string>
+    <string name="uae">UAE (+971)</string>
+    <string name="gallery">Gallery</string>
+    <string name="success">Success!</string>
+    <string name="india">India (+91)</string>
+    <string name="macau">Macau (+853)</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name*</string>
+    <string name="singapore">Singapore (+65)</string>
+    <string name="hong_kong">Hong Kong (+852)</string>
+    <string name="phone_number">Phone Number*</string>
+    <string name="search_country">Search Country</string>
+    <string name="select_country">Select Country*</string>
+    <string name="txt_select_country">Select Country</string>
+    <string name="confirm_password">Confirm Password*</string>
+    <string name="please_enter_country">Please select country</string>
+    <string name="please_select_an_image">Please select an image</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="password_not_match">Confirm password didn\'t match</string>
+    <string name="please_select_one_country">Please select one country</string>
+    <string name="please_enter_first_name">First name can\'t be left blank</string>
+    <string name="please_enter_phone_no">Phone number can\'t be left blank</string>
+    <string name="please_wait_image_loading">Please wait, image loading...</string>
+    <string name="please_enter_country_code">Country code can\'t be left blank</string>
+    <string name="phone_no_must_be_7_15_digits">Please enter 7–15 digits for mobile no</string>
+    <string name="already_have_an_account_login">Already have an account?&#160;&#160;LOGIN</string>
+
+    <!--forgot password and verify otp constants-->
+    <string name="email">Email*</string>
+    <string name="resend_otp">RESEND</string>
+    <string name="send_otp">Send Otp</string>
+    <string name="enter_otp">Enter One Time Password</string>
+    <string name="hint_enter_otp">Enter One Time Password*</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="did_not_get_otp">Didn\'t receive the One Time Password?</string>
+    <string name="account_verification">Account Verification</string>
+    <string name="incorrect_otp">Incorrect One Time Password, please try again.</string>
+    <string name="otp_resend_successfully">One Time Password resend successfully</string>
+    <string name="enter_otp_message">Please enter the One Time Password we sent on</string>
+    <string name="forgot_password_email_message">Please enter your email address. We will send you an One Time Password to reset your password.</string>
+    <string name="forgot_password_phone_message">Please enter your phone number. We will send you an One Time Password to reset your password.</string>
+
+    <!--reset and change password constants-->
+    <string name="ok">OK</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="old_password">Old Password*</string>
+    <string name="new_password">New Password*</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="password_reset_successfully">Password reset successfully</string>
+    <string name="password_changed_successfully">Password changed successfully</string>
+    <string name="reset_password_message">Please set new password for your account</string>
+    <!--<string name="signup_success_message">Your signup was successful.\nWe have send you an One Time Password on your number and the email you entered.</string>-->
+    <string name="signup_success_message">Your signup was successful.\nWe have sent you an One Time Password on your number and the verification link on your email you entered.</string>
+
+    <!--other information constants-->
+    <string name="skip">Skip</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="gender">Gender</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="location">Location</string>
+    <string name="anniversary">Anniversary</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="select_date_of_birth">Select Date of Birth</string>
+    <string name="anniversary_date">Anniversary Date</string>
+    <string name="other_information">Other Information</string>
+    <string name="detect_my_location">Detect my Location</string>
+
+    <!--card details constants-->
+    <string name="home">Home</string>
+    <string name="next">Next</string>
+    <string name="welcome">Welcome</string>
+    <string name="send_reset_link">Send \nreset link</string>
+
+    <!--categories screen constants-->
+    <string name="save">Save</string>
+    <string name="preferred_categories">Preferred Categories</string>
+    <string name="preferred_category">Preferred Category</string>
+    <string name="please_select_at_least_one">Please select at least one</string>
+    <string name="please_select_at_least_one_date">Please select at least one date</string>
+    <string name="please_select_at_least_one_slot">Please select at least one slot</string>
+
+    <!--card and bank details constants-->
+    <string name="cvv">CVV</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="card_number">Card Number</string>
+    <string name="choose_bank">Choose Bank*</string>
+    <string name="card_details">Card Details</string>
+    <string name="save_and_next">Save &amp; \nnext</string>
+    <string name="account_number">Account Number*</string>
+    <string name="bank_ifsc_code">Bank IFSC Code*</string>
+    <string name="bank_account_details">Bank Account Details</string>
+
+    <!--launcher home fragment constants-->
+    <string name="popular_deals">Popular Deals</string>
+    <string name="category_based_deals">Category</string>
+    <string name="percentage_based_deals">By Percentage</string>
+    <string name="special_offers">Special Offers</string>
+    <string name="product_based_deals">Product</string>
+    <string name="service_based_deals">Service</string>
+
+    <!--home activity constants-->
+    <string-array name="side_menu_items">
+        <item>HOME</item>
+        <item>MY ORDERS</item>
+        <item>MY BUDDIES</item>
+        <item>MY FRIENDS</item>
+        <item>MY WALLET</item>
+        <item>CHATS</item>
+        <item>FAVOURITES</item>
+        <item>PRODUCT HUNT</item>
+        <item>PRODUCT HUNT LISTING</item>
+        <item>NOTIFICATIONS</item>
+        <item>KYC</item>
+    </string-array>
+    <string name="chat">Chats</string>
+    <string name="my_buddy">My Buddies</string>
+    <string name="settings">Settings</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="favourites">Favourites</string>
+    <string name="my_friends">My Friends</string>
+    <string name="product_hunt">Product Hunt</string>
+    <string name="product_hunt_listing">Product Hunt Listing</string>
+    <string name="notifications">Notifications</string>
+    <string name="view_all">View All</string>
+    <string name="available">Available</string>
+    <string name="posted_by">Posted by</string>
+    <string name="per_off">% off</string>
+    <string name="view_profile">View Profile</string>
+    <string name="all">All</string>
+    <string name="custom">Custom</string>
+    <string name="enable_permission">To move forward please go to settings and allow us to access your storage &amp; location</string>
+    <string name="enable_storage_permission">To move forward please go to settings and allow us to access your storage</string>
+    <string name="enable_location_permission">To move forward please go to settings and allow us to access your location</string>
+    <string name="enable_contact_permission">To move forward please go to settings and allow us to access your contacts</string>
+    <string name="my_profile">My Profile</string>
+    <string name="error">Error</string>
+    <string name="retry">Retry</string>
+    <string name="remove">Remove</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="remove_photo">Remove Photo</string>
+    <string name="update_photo">Update Photo</string>
+    <string name="please_enter_confir_password">Confirm password can\'t be left blank</string>
+    <string name="please_enter_otp">Please enter One Time Password</string>
+    <string name="guest_user">Guest user</string>
+    <string name="details">Details</string>
+    <string name="product_images">Product Image(s)</string>
+    <string name="select_color">Select Color</string>
+    <string name="home_delivery_available">Home Delivery Available</string>
+    <string name="search_buddy">Search Buddy</string>
+    <string name="product_availability">Product Availability</string>
+    <string name="deal_posted">Deal Posted</string>
+    <string name="deal_expiry">Deal Expiry</string>
+    <string name="contact_merchant">CONTACT MERCHANT</string>
+    <string name="contact_buddy">CONTACT BUDDY</string>
+    <string name="merchant">Merchant</string>
+    <string name="buddy">Buddy</string>
+    <string name="buy_now">BUY NOW</string>
+    <string name="discount_post_string">% Off</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="address">ADDRESS</string>
+    <string name="text_address">Address*</string>
+    <string name="profile_phone_number">PHONE NUMBER</string>
+    <string name="login_required">You have to login first to perform this action.</string>
+    <string name="authentication_required">Authenticate<!--Authentication Required--></string>
+    <string name="phone_no_required">Phone number required</string>
+    <string name="validate_phone_no">Validate your phone number</string>
+    <string name="no_data_found">No data found</string>
+    <string name="active">Active</string>
+    <string name="away">Away</string>
+    <string name="do_not_disturb">Do not disturb</string>
+    <string name="offline">Offline</string>
+    <string name="profile_email">EMAIL</string>
+    <string name="edit">Edit</string>
+    <string name="txt_address_line_1">Address Line 1*</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="enter_new_phone_number">Enter New Phone Number</string>
+    <string name="online">Online</string>
+    <string name="slots_availability">Slots Availability</string>
+    <string name="in">in</string>
+    <string name="flat">Flat</string>
+    <string name="off_on">% Off on</string>
+    <string name="na">N/A</string>
+    <string name="delivery_by">Delivery By</string>
+    <string name="delivery_address">Delivery Address</string>
+    <string name="change">Change</string>
+    <string name="proceed_to_pay">Proceed \nto pay</string>
+    <string name="purchase_summary">Purchase Summary</string>
+    <string name="city">City*</string>
+    <string name="state">State*</string>
+    <string name="pincode">Pincode*</string>
+    <string name="payment">Payment</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="total_amount_to_be_paid">Total amount to be paid</string>
+    <string name="saved_cards">SAVED CARDS</string>
+    <string name="add_new_card">ADD NEW CARD</string>
+    <string name="cash_on_delivery">Cash on delivery</string>
+    <string name="cash_payment_text">Your request for COD will be handled by admin. If it gets  approved you can choose to pay by cash on delivery on your next orders.</string>
+    <string name="request_for_cod">REQUEST \nFOR COD</string>
+    <string name="dummy_card_no">**** **** **** 0956</string>
+    <string name="card_holder">Card Holder</string>
+    <string name="expires">Expires</string>
+    <string name="expire">EXPIRED</string>
+    <string name="dummy_card_date">04/17</string>
+    <string name="dummy_card_name">DAVID LUIZ</string>
+    <string name="quantity">Quantity</string>
+    <string name="user_not_exists">User not available for chat</string>
+    <string name="last_seen_on">Last seen on</string>
+    <string name="typing">Typing ...</string>
+    <string name="dollar_sign">$</string>
+    <string name="group_not_exists">Group not exists</string>
+    <string name="resend">Resend</string>
+    <string name="seen">Seen</string>
+    <string name="sent">Sent</string>
+    <string name="videos">Videos</string>
+    <string name="images">Images</string>
+    <string name="add">Add</string>
+    <string name="country">Country*</string>
+    <string name="please_enter_valid_address">Please enter valid address</string>
+    <string name="please_enter_city">City can\'t be left blank</string>
+    <string name="please_enter_state">State can\'t be left blank</string>
+    <string name="enter_country">Country can\'t be left blank</string>
+    <string name="please_enter_pincode">Pincode can\'t be left blank</string>
+    <string name="please_enter_address">Address can\'t be left blank</string>
+    <string name="please_enter_quantity">Quantity can\'t be left blank</string>
+    <string name="quantity_greater_than_0">Quantity must be greater than 0</string>
+    <string name="request">Request</string>
+    <string name="order_status">Order Status</string>
+    <string name="pending">Order Pending</string>
+    <string name="pending_status">Pending</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="date_range">Date Range</string>
+    <string name="order_confirmed">Order Confirmed</string>
+    <string name="track">Track</string>
+    <string name="shipped">Shipped</string>
+    <string name="out_for_delivery">Out for Delivery</string>
+    <string name="rejected">Rejected</string>
+    <string name="apply">APPLY</string>
+    <string name="discover_deals_near_you_in_miles">Discover deals near you (in miles)</string>
+    <string name="discover_deals_near_you_in_km">Discover deals near you (in km)</string>
+    <string name="auto">Auto</string>
+    <string name="zero">0</string>
+    <string name="_4">4</string>
+    <string name="_8">8</string>
+    <string name="_12">12</string>
+    <string name="_16">16</string>
+    <string name="_20">20</string>
+    <string name="store_shop_name">Store/Shop Name</string>
+    <string name="search_for_your_favourite_shop_or_store">Search for your favourite Shop or Store</string>
+    <string name="category">Category</string>
+    <string name="choose_a_category">Choose a Category</string>
+    <string name="choose_a_sub_category">Choose a Sub Category</string>
+    <string name="discount_percentage">Discount Percentage(%)</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="type_of_deal">Type of Deal</string>
+    <string name="product">Product</string>
+    <string name="service">Service</string>
+    <string name="both">Both</string>
+    <string name="_90">90%</string>
+    <string name="your_order_has_been_placed">Your order has been placed</string>
+    <string name="please_share_this_qr_code">Please share this QR code with buddy at time of delivery to complete the order.</string>
+    <string name="order_details">Order Details</string>
+    <string name="order_no">Order No</string>
+    <string name="order_date">Order Date</string>
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="filters">Filters</string>
+    <string name="search_products_and_services">Search Products &amp; Services</string>
+    <string name="txt_address">Address</string>
+    <string name="order_placed">Order Placed</string>
+    <string name="sorry_we_have">Sorry we have </string>
+    <string name="txt_available"> available</string>
+    <string name="profile">Profile</string>
+    <string name="deals_posted">Deals Posted</string>
+    <string name="deals_shared">Deals Shared</string>
+    <string name="reviews">Reviews</string>
+    <string name="add_address">Add Address</string>
+    <string name="_1">1</string>
+    <string name="share_deal">Share Deal!</string>
+
+    <string-array name="percentages_list">
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="user_status">
+        <item>Active</item>
+        <item>Away</item>
+        <item>Do not disturb</item>
+        <item>Offline</item>
+    </string-array>
+
+    <string name="write_message">Write message</string>
+
+    <string name="dollar">$</string>
+    <string name="rupees">₹</string>
+    <string name="singapuri_dollar">S$</string>
+    <string name="txt_order_no">Order No</string>
+    <string name="provide_rating">PROVIDE RATING</string>
+    <string name="status_pending">PENDING</string>
+    <string name="status_confirm">CONFIRMED</string>
+    <string name="status_shipped">SHIPPED</string>
+    <string name="status_out_for_delivery">OUT FOR DELIVERY</string>
+    <string name="status_delivered">DELIVERED</string>
+    <string name="delivered">Delivered</string>
+    <string name="status_cancel">CANCELED</string>
+    <string name="status_rejected">REJECTED</string>
+    <string name="order_placed_on">Order Placed on</string>
+    <string name="delivered_on">Delivered on</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="change_phone_no">Change Phone Number</string>
+    <string name="block">Block</string>
+    <string name="report">Report</string>
+    <string name="unblock">Unblock</string>
+    <string name="close_deal">Close Deal</string>
+    <string name="make_an_offer">Make an Offer</string>
+    <string name="i_m_interested">I’m interested</string>
+    <string name="my_offer_for_this_would_be">My Offer for this would be...</string>
+    <string name="sure_to_close_deal">Are you sure you want to close this deal for</string>
+    <string name="cancel">Cancel</string>
+    <string name="file_not_found">Sorry, your requested file is not found.</string>
+    <string name="deal_validity">Deal Validity</string>
+    <string name="to">to</string>
+    <string name="file">File</string>
+    <string name="sharing_from_cloud_not_supported">Sharing from cloud storage is not supported.</string>
+    <string name="uable_to_select_pdf_please_try_again_later">Unable to select pdf. Try again.</string>
+    <string name="attributes">Attributes</string>
+    <string name="friends">FRIENDS</string>
+    <string name="requests">REQUESTS</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="about_us">About Us</string>
+    <string name="terms_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="verify_phone_no">Verify Phone Number</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="search_participants">Search Participants</string>
+    <string name="add_participants">Add Participants</string>
+    <string name="group_name">Group Name</string>
+    <string name="txt_friends">Friends</string>
+    <string name="txt_buddies">Buddies</string>
+    <string name="unable_to_create_group_chat">Error: Unable to create group chat.</string>
+    <string name="please_enter_group_name">Group name can\'t be left blank</string>
+    <string name="please_select_at_least_one_friend">Please select at least one friend</string>
+    <string name="filter_orders">Filter Orders</string>
+    <string name="dollar0">0 Points</string>
+    <string name="total_available_balance">Total Available Balance</string>
+    <string name="paid">Paid</string>
+    <string name="receive">Received</string>
+    <string name="create_group">Create Group</string>
+    <string name="leave_group">Leave group</string>
+    <string name="are_you_sure_to_leave_group">Are you sure you want to leave group?</string>
+    <string name="leave">Leave</string>
+    <string name="left">Left</string>
+    <string name="left_group">left</string>
+    <string name="are_typing">are typing ...</string>
+    <string name="is_typing">is typing ...</string>
+    <string name="txt_pending">Pending...</string>
+    <string name="will_deliver_your_order"> will deliver your order.</string>
+    <string name="call">Call</string>
+    <string name="track_order">Track Order</string>
+    <string name="rating">Ratings</string>
+    <string name="sort">Names (A-Z)</string>
+    <string name="invite">Invite</string>
+    <string name="invited">Invited</string>
+    <string name="wants_to_be_your_friend">wants to be your friend</string>
+    <string name="request_to">Request to</string>
+    <string name="is_pending">is pending</string>
+    <string name="show_qr_code">Show QR Code</string>
+    <string name="requested">Requested</string>
+    <string name="block_deal">Block Deal</string>
+    <string name="blocked_deals">Blocked Deals</string>
+    <string name="sure_to_block_deal">Are you sure you want to block this deal?</string>
+    <string name="unblock_deal">Unblock Deal</string>
+    <string name="sure_to_unblock_deal">Are you sure you want to unblock this deal?</string>
+    <string name="why_report_deal">Why do you want to report this deal?</string>
+    <string name="enter_your_text_here">Enter your text here...</string>
+    <string name="rate_buddy">Rate Buddy</string>
+    <string name="rate_merchant">Rate Merchant</string>
+    <string name="write_review">Write Review</string>
+    <string name="your_review_here">Your review here</string>
+    <string name="biddy_assigned">Buddy Assigned</string>
+    <string name="biddy_not_assigned">No buddy has accepted your request.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload">Upload</string>
+    <string name="upload_images">Upload Image(s)</string>
+    <string name="description">Description</string>
+    <string name="category_and_sub_category">Category &amp; Sub-Category</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_sub_category">Select Sub-Category</string>
+    <string name="price_range">Price Range</string>
+    <string name="min_price">Min Price</string>
+    <string name="max_price">Max Price</string>
+    <string name="min">$0</string>
+    <string name="value">0</string>
+    <string name="max">$10000</string>
+    <string name="add_description">Add Description*</string>
+    <string name="please_enter_category">Category can\'t be left blank</string>
+    <string name="please_enter_sub_category">Sub Category can\'t be left blank</string>
+    <string name="please_enter_description">Description can\'t be left blank</string>
+
+    <!-- Setting screen string file -->
+    <string name="manage_bank_details">Manage Bank Details</string>
+    <string name="change_language">Change Language</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="help">HELP</string>
+    <string name="feedback_to_admin">Feedback to Admin</string>
+    <string name="user_guide">User Guide</string>
+    <string name="faqs">FAQs</string>
+    <string name="legal">LEGAL</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+
+    <string name="copyright">Copyright</string>
+    <string name="local_information">Location Information</string>
+    <string name="logout">Logout</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="malyalm">Melayu</string>
+    <string name="Arebic">اردو</string>
+    <string name="chinees_trad">繁體中文</string>
+    <string name="chinees_simplefied">简体中文</string>
+    <string name="edittext_hint">Write your feedback...</string>
+    <string name="tandc">Terms &amp; Conditions</string>
+
+    <string name="posted_by_me">Posted by Me</string>
+    <string name="shared_by_me">Shared by Me</string>
+    <string name="bookmarked">Bookmarked</string>
+    <string name="my_deals">My Deals</string>
+    <string name="_yes">Yes</string>
+    <string name="_no">No</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="share_app">Share App</string>
+    <string name="share_app_message">\nLet me recommend you this application\n\nhttps://play.google.com/store/apps/details?id=com.shopoholic \n\n</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="taxes">Taxes</string>
+    <string name="payment_mode">Payment Mode</string>
+    <string name="online_cash_on_delivery">Online/Cash On Delivery</string>
+    <string name="order_placed_summary">Your request has been sent to the</string>
+    <string name="order_placed_summary2">. We are waiting for the confirmation.</string>
+    <string name="photos">Photos</string>
+    <string name="files">Files</string>
+    <string name="shopper">Shopper</string>
+    <string name="your_order_will_be_out_for_delivery_when_buddy_will_pick_the_order">Your order will be out for delivery when buddy will pick the order</string>
+    <string name="your_order_will_be_out_for_delivery_on_date">Your order will be out for delivery when buddy will pick the order.  The estimated delivery date is</string>
+    <string name="your_order_will_be_shipped_when_merchant_will_allocate_a_buddy">Your order will be shipped</string>
+    <string name="please_give_feedback">Please give some feedback</string>
+    <string name="stores">Stores/Shops</string>
+    <string name="km">KM</string>
+    <string name="m">M</string>
+    <string name="leave_this_group">leave this group.</string>
+    <string name="to_send_msg">to send message.</string>
+    <string name="unable_to_fetch_location">Unable to fetch location. Try again.</string>
+    <string name="select_image">Select Image</string>
+    <string name="select_video">Select Video</string>
+    <string name="are_you_sure_to_block">Are you sure you want to block</string>
+    <string name="delete_msg">Delete Messages</string>
+    <string name="sure_to_delete_msg">Are you sure you want to delete messages?</string>
+    <string name="delete">Delete</string>
+    <string name="i_m_interested_in_buying_this">I’m interested in buying this.</string>
+    <string name="i_would_like_to_buy_it_for">I would like to buy it for</string>
+    <string name="session_expire">Session Expired</string>
+    <string name="session_expire_message">You are logged out because some other user has logged in using your credentials. Please contact Admin if its not you.</string>
+    <string name="order_placed_successfully">Order placed successfully</string>
+    <string name="blocked">User Blocked</string>
+    <string name="blocked_by_admin">You have been blocked by Admin</string>
+    <string name="deleted">User Deleted</string>
+    <string name="deleted_by_admin">You have been deleted by Admin</string>
+    <string name="out_of_stock">Out of Stock</string>
+    <string name="your_order">Your Order</string>
+    <string name="search_shops_or_stores">Search shops or stores</string>
+    <string name="empty_search_message">You haven\'t added any product or service to search</string>
+    <string name="sub_category">Sub Category</string>
+    <string name="please_select_category_first">Please select category first</string>
+    <string name="please_enter_offer">Offer can\'t be left blank</string>
+    <string name="please_enter_message">Message can\'t be left blank</string>
+    <string name="counter">Counter</string>
+    <string name="please_enter_review">Review can\'t be left blank</string>
+    <string name="please_rate_merchant">Please rate merchant</string>
+    <string name="please_rate_buddy">Please rate buddy</string>
+    <string name="offer_accepted">Your offer has accepted.</string>
+    <string name="offer_rejected">Your offer has rejected.</string>
+    <string name="cancel_order">Cancel order</string>
+    <string name="sure_to_cancel_order">Are you sure you want to cancel this order?</string>
+    <string name="sure_to_clear_filter">Are you sure you want to clear the filters?</string>
+    <string name="per_hour">/hour</string>
+    <string name="per_day">(per day)</string>
+    <string name="select_slots">Please select at least one slot</string>
+    <string name="slots">Slot(s)</string>
+    <string name="no_slots_available">No slots available</string>
+    <string name="offer_not_set">Offer not set yet</string>
+    <string name="deal_closed">Deal has been closed for</string>
+    <string name="unable_to_send_invite">Unable to send invite</string>
+    <string name="shopper_home">Shopper Home</string>
+    <string name="please_rate_merchant_buddy">Please rate merchant or buddy</string>
+    <string name="posted_on">Posted on :</string>
+    <string name="txt_images">Image(s)</string>
+    <string name="max_5_images_allowed">Maximum 5 images are allowed to upload.</string>
+    <string name="please_upload_image">Please upload at least one image</string>
+    <string name="please_enter_price_range">Please select price range</string>
+    <string name="deal_started">Deal started</string>
+    <string name="you_have_received_a_new_notification">You have received a new notification</string>
+    <string name="hunt_request">sent hunt request</string>
+    <string name="addad_new_deal">added a new deal</string>
+    <string name="no_nearby_buddy_available">No nearby buddy available for your hunt request</string>
+    <string name="confirm_order">has confirmed your order for</string>
+    <string name="your_order_for">Your order for</string>
+    <string name="shipped_order">has been shipped</string>
+    <string name="out_for_delivery_order">is out for delivery</string>
+    <string name="delivered_order">has been successfully delivered</string>
+    <string name="reject_order">has rejected your order for</string>
+    <string name="no_buddy_accept_request">No buddy accepted your request for</string>
+    <string name="send_friend_request">sent you a new friend request</string>
+    <string name="accept_friend_request">accepted your friend request</string>
+    <string name="canceled_order">has canceled your order for</string>
+    <string name="deal_start">Deal Start</string>
+    <string name="no_home_delivery">This merchant doesn\'t provide the home delivery for this product. You can select your own buddy by searching him after buying this product from your order details.</string>
+    <string name="price">Price</string>
+    <string name="oops">Oops</string>
+    <string name="points">Points</string>
+    <string name="combination_not_valid">This combination is not valid</string>
+    <string name="file_not_found_for_send">File not found. It may be deleted or moved.</string>
+    <string name="search_contact">Search Contact</string>
+    <string name="select_one_store">Please select one or more stores to proceed</string>
+    <string name="time_slots">Time Slots</string>
+    <string name="select_slot">Select Slots</string>
+    <string name="all_day">All Day</string>
+    <string name="all_day_available">24 hours available</string>
+    <string name="deal_not_start_yet">Deal not started yet</string>
+    <string name="amount_cant_be_zero">Amount can\'t be 0</string>
+    <string name="json_parsing_error">Parsing error! Please check</string>
+    <string name="something_went_wrong">Something went wrong! Please try again</string>
+    <string name="sure_to_show_code">Are you sure your buddy has completed the service for all days?</string>
+    <string name="rating_and_review">Ratings and Reviews</string>
+    <string name="delete_message">Delete message</string>
+    <string name="please_provide_email_address">Please provide email address first</string>
+    <string name="email_not_verified">We need to validate your email, please check and verify it...hurry!!</string>
+    <string name="resend_link">Resend link</string>
+    <string name="please_enter_email_address">Please provide email address from profile to accept request</string>
+    <string name="please_enter_phone_number">Please provide phone number from profile to create hunt</string>
+    <string name="delete_chat">Delete Chat</string>
+    <string name="wiil_be_delivered_by_buddy">Product will be delivered by assigned buddy</string>
+    <string name="_10000">99999</string>
+    <string name="min_must_lass_than_max">Min Price must be less then max price</string>
+    <string name="read_more">Read more...</string>
+    <string name="read_less">Read less...</string>
+    <string name="images_loading_please_wait">Images loading, please wait...</string>
+
+
+    <!--product hunt-->
+    <string name="fetching_location">Fetching Location...</string>
+    <string name="validity">Validity</string>
+    <string name="txt_start_date">Start date</string>
+    <string name="txt_end_date">End date</string>
+    <string name="recursive_slot">Recursive slot(s)</string>
+    <string name="add_time_slots">Add Time Slots</string>
+    <string name="add_slots">Add Slots</string>
+    <string name="please_enter_start_date">Start date can \'t be left blank</string>
+    <string name="please_enter_end_date">End date can\'t be left blank</string>
+    <string name="please_enter_address_first">Address can\'t be left blank</string>
+    <string name="cannot_select_all_day">You cannot work all day because you have already added a slot</string>
+    <string name="no_time_available">No slots available</string>
+    <string name="entered_slots_overlaping">Entered slots are overlapping</string>
+    <string name="please_enter_price">Price can\'t be left blank</string>
+    <string name="unable_to_get_currency">Sorry we are unable to get currency, please try again. If this issue continue please restart your phone.</string>
+    <string name="set_price_time_duration">Set time, price (per day) and duration</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="buddies_type">Buddy Type</string>
+    <string name="select_buddies">Select Buddies</string>
+    <string name="send_request_to">Send request to</string>
+    <string name="followed_buddies">Followed Buddies</string>
+    <string name="followed_worked_buddies">Followed &amp; Worked Buddies</string>
+    <string name="nearby_buddies">Nearby Buddies</string>
+    <string name="please_enter_buddy_type">Buddy type can\'t be left blank</string>
+    <string name="please_select_buddy_type">Please select buddy type</string>
+    <string name="please_enter_target_area">Target area can\'t be left blank</string>
+    <string name="please_enter_expected_date">Expected delivery date can\'t be left blank</string>
+    <string name="please_enter_slots">Slot can\'t be left blank</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="delivery_date">Delivery date :</string>
+    <string name="bidding_price">Bidding price</string>
+    <string name="select_buddy">Select Buddy</string>
+    <string name="unable_to_make_payment">Error: Unable to make payment</string>
+    <string name="target_area">Target Area</string>
+    <string name="add_target_area">Add Target Area*</string>
+    <string name="expected_delivery_date">Expected Delivery Date</string>
+    <string name="followed">Followed</string>
+    <string name="worked">Worked</string>
+    <string name="nearby">Nearby</string>
+    <string name="buddies_have">buddies have</string>
+    <string name="buddy_has">buddy has</string>
+    <string name="accepted_request">accepted your request</string>
+    <string name="accepted_hunt_request">accepted your hunt request</string>
+    <string name="rejected_hunt_request">rejected your hunt request</string>
+    <string name="buddy_list">Buddy List</string>
+    <string name="buddy_listing">Buddy Listing</string>
+    <string name="unsupport_file">Unsupported file type.</string>
+    <string name="reshared_buddy_count">Reshared buddy count :</string>
+
+    <string name="shopoholic_wallet">Shopoholic Wallet</string>
+    <string name="choose_another_option_to_complete_the_payment">Choose another option to complete the payment</string>
+    <string name="select_option_to_pay">Choose an option to pay</string>
+    <string name="points_summary">Points Summary</string>
+    <string name="available_points_for">Available points for</string>
+    <string name="wallet_not_applied">Wallet amount is not applicable for COD</string>
+    <string name="order_in">Order in</string>
+    <string name="helpline_number">Helpline Number</string>
+    <string name="total_tax">Total tax</string>
+    <string name="price_high_to_low">Price (High to Low)</string>
+    <string name="price_low_to_high">Price (Low to High)</string>
+    <string name="rating_high_to_low">Rating (High to Low)</string>
+    <string name="rating_low_to_high">Rating (Low to High)</string>
+    <string name="newest_first">Newest first</string>
+    <string name="oldest_first">Oldest first</string>
+
+    <string name="unable_to_get_location">Sorry, we are unable to get the location, please try again. If this issue continues please restart your phone.</string>
+    <string name="provide_address_in_profile">Please provide address in profile</string>
+    <string name="address_not_editable">You cannot edit your address as we have your order under processing</string>
+    <string name="miles">Miles</string>
+    <string name="wallet_and">Wallet &amp;</string>
+    <string name="alipay">Alipay</string>
+    <string name="paytm">Paytm</string>
+    <string name="wallet">Wallet</string>
+    <string name="cod">COD</string>
+    <string name="hunt_name">Hunt Name</string>
+    <string name="please_enter_hunt_name">Hunt name can\'t be left blank</string>
+    <string name="hunt_closed">This hunt has been closed</string>
+    <string name="expected_delivery_charge">Expected Delivery Charges</string>
+    <string name="please_enter_expected_charges">Expected delivery charges can\'t be left blank</string>
+    <string name="cannot_decrease_price">You cannot decrease the delivery charges</string>
+    <string name="sure_to_delete_hunt">Are you sure you want to delete this hunt?</string>
+    <string name="add_delivery_address">Add Delivery Address*</string>
+    <string name="locations">Locations</string>
+    <string name="enable_call_permission">To move forward please go to settings and allow us to access your calls</string>
+    <string name="feedback_shared_with_admin">Your feedback has been shared with the admin. You will be contacted shortly.</string>
+    <string name="terms_msg">By clicking Sign Up you agree to our</string>
+    <string name="cant_book_past_slot">You cannot book slot for the past time</string>
+    <string name="new_version_available">New version available</string>
+    <string name="upgrade_to_new_version">Please, upgrade app to new version for better experience.</string>
+    <string name="no_thanks">No thanks</string>
+    <string name="menu_hint">Detailed Menu option for you</string>
+    <string name="search_hint">Search for specific deal or product</string>
+    <string name="map_hint">Map View to visualize the deals per area</string>
+    <string name="filter_hint">Detail Filter Options here</string>
+    <string name="product_hint">All the special Product deals</string>
+    <string name="offer_hint">Special high discounted deals</string>
+    <string name="service_hint">All the skilled services section for you to search the best service as per your need</string>
+    <string name="location_hint">Change the location by tapping on this</string>
+    <string name="category_hint">Tap here to see the categories easy view</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us_and_faqs">About Us And FAQs</string>
+    <string name="cancellation_policy">Cancellation Policy</string>
+    <string name="you_can_reach_us_at">You can reach us at :-</string>
+    <string name="wework_32_milestone_the_galaxy_hotel_nh8_sector_15_gurugram_hr_122001">WeWork, 32 Milestone, The Galaxy Hotel NH8, Sector 15, Gurugram, HR-122001</string>
+    <string name="helpme_shopoholicbuddy_com">helpme@shopoholicbuddy.com</string>
+    <string name="kyc">KYC</string>
+
+    <!--  <string name="facebook_app_id">769346226877218</string>
+    <string name="fb_login_protocol_scheme">fb769346226877218</string> -->
+
+
+</resources>

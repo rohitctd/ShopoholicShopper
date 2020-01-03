@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    tools:mContext=".activities.BuddySharePostDealActivity">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/layout_toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_buddy_shared_posted"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_login"
+            android:padding="@dimen/_3sdp"
+            android:visibility="visible"
+            tools:targetApi="lollipop"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include
+        layout="@layout/layout_progress_bar"
+        android:id="@+id/progressBar"/>
+    <include
+        layout="@layout/layout_no_data_found"
+        android:id="@+id/layout_no_data_found"/>
+    </FrameLayout>
+</LinearLayout>

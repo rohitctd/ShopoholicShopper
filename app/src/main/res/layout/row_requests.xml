@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl_row_request"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_friend_name"
+        >
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/iv_request_image"
+    android:layout_width="@dimen/_36sdp"
+    android:layout_height="@dimen/_36sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_centerVertical="true"
+    android:src="@drawable/ic_side_menu_user_placeholder"/>
+
+<com.shopoholic.customviews.CustomTextView
+    android:id="@+id/tv_requseting_user_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toEndOf="@+id/iv_request_image"
+    android:layout_toStartOf="@+id/tv_request_cancel"
+    android:layout_centerVertical="true"
+    android:text=""
+    android:minLines="1"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:textSize="@dimen/_12ssp"
+    app:fontName="@string/orkney_medium"
+    android:layout_marginTop="@dimen/_18sdp"
+    android:layout_marginStart="@dimen/_15sdp"
+    android:textColor="@color/colorLightWhite"
+    />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_request_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_reject_request"
+        android:text="@string/cancel"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:textSize="@dimen/_10ssp"
+        android:textAllCaps="true"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textColor="@color/colorLightWhite"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_accept_reject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_60sdp">
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_request_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_accept_request"
+        android:text="@string/accept"
+        android:textSize="@dimen/_10ssp"
+        android:textAllCaps="true"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textColor="@color/colorLightWhite"
+        />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_request_reject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_reject_request"
+        android:text="@string/reject"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_10ssp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:textColor="@color/colorLightWhite"
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/black_overlay"/>
+</LinearLayout>

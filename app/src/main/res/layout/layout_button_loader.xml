@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_105sdp"
+    android:layout_height="@dimen/_105sdp"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent">
+
+    <com.shopoholic.customviews.CustomButton
+        android:id="@+id/btn_action"
+        android:layout_width="@dimen/_73sdp"
+        android:layout_height="@dimen/_73sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/blue_button_circle"
+        android:gravity="center"
+        android:text="@string/log_in"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13sdp"
+        android:visibility="visible"
+        app:fontName="@string/orkney_bold"/>
+
+    <View
+        android:id="@+id/view_button_loader"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5ssp"
+        android:background="@drawable/ic_loader_element"
+        android:visibility="gone"/>
+
+    <View
+        android:id="@+id/view_button_dot"
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/_13ssp"
+        android:background="@drawable/ic_loader_element"
+        android:visibility="visible"/>
+
+</FrameLayout>
+

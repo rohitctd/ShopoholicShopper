@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<android.support.v4.widget.NestedScrollView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:scrollbars="none"-->
+    <!--android:overScrollMode="never"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/bg_login">-->
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_banners"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:focusableInTouchMode="true"
+            tools:targetApi="lollipop"/>
+
+        <FrameLayout
+            android:id="@+id/fl_popular_deals_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:focusableInTouchMode="true">
+
+            <com.shopoholic.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popular_deals"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_13ssp"
+                app:fontName="@string/orkney_medium"/>
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_view_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/view_all"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_13ssp"
+                app:fontName="@string/orkney_bold"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_popular_deals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:padding="@dimen/_3sdp"
+            tools:targetApi="lollipop"/>
+
+            <include
+                layout="@layout/layout_no_data_found"/>
+        </FrameLayout>
+    </LinearLayout>
+<!--</android.support.v4.widget.NestedScrollView>-->

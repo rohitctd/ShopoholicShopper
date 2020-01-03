@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.shopoholic.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/category_and_sub_category"
+                android:textColor="@color/colorLightWhite"
+                android:textSize="@dimen/_13ssp"
+                app:fontName="@string/orkney_bold" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_select_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_signup_dropdown"
+                android:gravity="center"
+                android:hint="@string/select_category"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="45"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_12ssp"
+                app:fontName="@string/orkney_regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@color/colorSeparator" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_select_sub_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_signup_dropdown"
+                android:gravity="center"
+                android:hint="@string/select_sub_category"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="45"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_12ssp"
+                app:fontName="@string/orkney_regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@color/colorSeparator" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorSeparator" />
+
+
+            <com.shopoholic.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/hunt_name"
+                android:textColor="@color/colorLightWhite"
+                android:textSize="@dimen/_13ssp"
+                app:fontName="@string/orkney_bold" />
+
+            <com.shopoholic.customviews.CustomEditText
+                android:id="@+id/et_hunt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="@string/hunt_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="3"
+                android:maxLength="100"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:minLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_12ssp"
+                app:fontName="@string/orkney_regular" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@color/colorSeparator" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorSeparator" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_price_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_price_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/price_range"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontName="@string/orkney_bold" />
+
+                <LinearLayout
+                    android:id="@+id/seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_price_range"
+                    android:layout_marginStart="@dimen/_17sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:orientation="vertical" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekbar"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="@string/min_price"
+                    android:textColor="@color/colorHintText"
+                    android:textSize="@dimen/_9ssp"
+                    app:fontName="@string/orkney_regular" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/min_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_min"
+                    android:layout_alignBottom="@+id/tv_min"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_toEndOf="@+id/tv_min"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorHintText"
+                    android:textSize="@dimen/_9ssp"
+                    app:fontName="@string/orkney_medium" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/max_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_max"
+                    android:layout_alignBottom="@+id/tv_max"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:text=""
+                    android:textColor="@color/colorHintText"
+                    android:textSize="@dimen/_9ssp"
+                    app:fontName="@string/orkney_medium" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seekbar"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_1sdp"
+                    android:layout_toStartOf="@+id/max_currency"
+                    android:text="@string/max_price"
+                    android:textColor="@color/colorHintText"
+                    android:textSize="@dimen/_9ssp"
+                    app:fontName="@string/orkney_regular" />
+
+                <com.shopoholic.customviews.CustomEditText
+                    android:id="@+id/tv_min_price"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_min"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:text="@string/_1"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontName="@string/orkney_medium" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_min_price"
+                    android:layout_alignStart="@+id/tv_min_price"
+                    android:layout_alignEnd="@+id/tv_min_price"
+                    android:background="@android:color/white" />
+
+                <com.shopoholic.customviews.CustomEditText
+                    android:id="@+id/tv_max_price"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_min"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:text="@string/_20"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontName="@string/orkney_medium" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_max_price"
+                    android:layout_alignStart="@+id/tv_max_price"
+                    android:layout_alignEnd="@+id/tv_max_price"
+                    android:background="@android:color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/tv_max_price"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/colorSeparator" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.shopoholic.customviews.CustomTextView
+                        android:id="@+id/tv_upload_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/upload_images"
+                        android:textColor="@color/colorLightWhite"
+                        android:textSize="@dimen/_13ssp"
+                        app:fontName="@string/orkney_bold"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ProgressBar
+                        android:id="@+id/image_loader"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignTop="@+id/tv_upload"
+                        android:layout_alignBottom="@+id/tv_upload"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toStartOf="@+id/tv_upload"
+                        android:visibility="gone" />
+
+                    <com.shopoholic.customviews.CustomTextView
+                        android:id="@+id/tv_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/rectangle_gradient"
+                        android:drawableStart="@drawable/ic_add_deal_upload"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:text="@string/upload"
+                        android:textColor="@color/colorLightWhite"
+                        android:textSize="@dimen/_10ssp"
+                        app:fontName="@string/orkney_regular" />
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_upload_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorSeparator" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/description"
+                android:textColor="@color/colorLightWhite"
+                android:textSize="@dimen/_13ssp"
+                app:fontName="@string/orkney_bold" />
+
+            <com.shopoholic.customviews.CustomEditText
+                android:id="@+id/add_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/round_corner_separator_stroke_transparent_bg"
+                android:ellipsize="end"
+                android:focusableInTouchMode="true"
+                android:gravity="start|top"
+                android:hint="@string/add_description"
+                android:maxLength="500"
+                android:minLines="3"
+                android:padding="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/colorLightWhite"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="@string/orkney_regular"
+                tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/colorSeparator" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="@string/txt_address"
+                android:textColor="@color/colorLightWhite"
+                android:textSize="@dimen/_13ssp"
+                app:fontName="@string/orkney_bold" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:background="@drawable/round_corner_separator_stroke_transparent_bg"
+                android:focusableInTouchMode="true"
+                android:gravity="top|start"
+                android:hint="@string/add_delivery_address"
+                android:maxLines="3"
+                android:minLines="3"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="visible"
+                app:fontName="@string/orkney_regular" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@color/colorSeparator" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/label_target_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:text="@string/target_area"
+                android:textColor="@color/colorLightWhite"
+                android:textSize="@dimen/_13ssp"
+                android:visibility="gone"
+                app:fontName="@string/orkney_bold" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_target_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_14sdp"
+                android:background="@drawable/round_corner_separator_stroke_transparent_bg"
+                android:focusableInTouchMode="true"
+                android:gravity="top|start"
+                android:hint="@string/add_target_area"
+                android:maxLines="3"
+                android:minLines="3"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_7sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:fontName="@string/orkney_regular" />
+
+
+            <View
+                android:id="@+id/view_target_area"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:background="@color/colorSeparator"
+                android:visibility="gone" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_buddy_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:text="@string/expected_delivery_date"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontName="@string/orkney_bold" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_expected_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_shoppers_other_info_calender"
+                    android:gravity="center"
+                    android:hint="@string/expected_delivery_date"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="45"
+                    android:maxLines="1"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/colorHintText"
+                    android:textSize="@dimen/_10ssp"
+                    app:fontName="@string/orkney_regular" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/colorSeparator" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/colorSeparator" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_14sdp"
+                    android:layout_marginRight="@dimen/_14sdp"
+                    android:text="@string/buddies_type"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontName="@string/orkney_bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingEnd="@dimen/_30sdp">
+
+                    <CheckBox
+                        android:id="@+id/rb_followed"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custom_radio_button"
+                        android:checked="true"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="@string/followed"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <CheckBox
+                        android:id="@+id/rb_worked"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custom_radio_button"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="@string/worked"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingEnd="@dimen/_30sdp">
+
+                    <CheckBox
+                        android:id="@+id/rb_nearby"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custom_radio_button"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="@string/nearby"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="RtlSymmetry" />
+
+                    <CheckBox
+                        android:id="@+id/rb_target_area"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/custom_radio_button"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/_4sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:text="@string/target_area"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="RtlSymmetry" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:background="@color/colorSeparator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_slots_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/validity"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontName="@string/orkney_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginRight="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.shopoholic.customviews.CustomTextView
+                            android:id="@+id/tv_start_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableEnd="@drawable/ic_shoppers_other_info_calender"
+                            android:hint="@string/txt_start_date"
+                            android:imeOptions="actionNext"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@color/colorHintText"
+                            android:textSize="@dimen/_11ssp"
+                            app:fontName="@string/orkney_regular" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/colorSeparator" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_28sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.shopoholic.customviews.CustomTextView
+                            android:id="@+id/tv_end_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:drawableEnd="@drawable/ic_shoppers_other_info_calender"
+                            android:hint="@string/txt_end_date"
+                            android:imeOptions="actionNext"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:textColor="@android:color/white"
+                            android:textColorHint="@color/colorHintText"
+                            android:textSize="@dimen/_11ssp"
+                            app:fontName="@string/orkney_regular" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/colorSeparator" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/rb_recursive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:button="@drawable/custom_radio_button"
+                        android:checked="false"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:text="@string/recursive_slot"
+                        android:textColor="@color/colorHintText"
+                        android:textSize="@dimen/_12ssp"
+                        tools:ignore="RtlSymmetry" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_upload_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp">
+
+                        <com.shopoholic.customviews.CustomTextView
+                            android:id="@+id/tv_add_time_slots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="@string/add_time_slots"
+                            android:textColor="@color/colorLightWhite"
+                            android:textSize="@dimen/_13ssp"
+                            app:fontName="@string/orkney_bold"
+                            tools:ignore="RelativeOverlap" />
+
+                        <com.shopoholic.customviews.CustomTextView
+                            android:id="@+id/tv_time_slots"
+                            android:layout_width="80dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/rectangle_gradient"
+                            android:gravity="center"
+                            android:text="@string/add_slots"
+                            android:textColor="@color/colorLightWhite"
+                            android:textSize="@dimen/_8ssp"
+                            app:fontName="@string/orkney_regular" />
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_time_slots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:nestedScrollingEnabled="false"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        tools:targetApi="lollipop" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <include layout="@layout/layout_button_loader" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/layout_country_code_bottom_sheet" />
+
+</android.support.design.widget.CoordinatorLayout>

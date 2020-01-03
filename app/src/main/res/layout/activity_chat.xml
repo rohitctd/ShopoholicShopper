@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/layout_chat_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:background="@color/colorLightWhite"
+        >
+
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_placeholder"
+            android:background="@color/grayBg"
+            />
+
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ellipsize="end"
+                android:layout_toEndOf="@id/iv_product_image"
+                android:imeOptions="actionNext"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@string/dummy_text"
+                android:textColor="@color/colorMessageText"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="@string/orkney_medium"/>
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionNext"
+                android:layout_toEndOf="@+id/iv_product_image"
+                android:layout_below="@+id/tv_product_name"
+                android:text="@string/dummy_text"
+                android:textColor="@color/colorMessageText"
+                android:textSize="@dimen/_14ssp"
+                app:fontName="@string/orkney_bold"/>
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_product_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:layout_toEndOf="@id/iv_product_image"
+                android:layout_below="@+id/tv_product_price"
+                android:imeOptions="actionNext"
+                android:text="@string/dummy_text"
+                android:visibility="gone"
+                android:textColor="@color/colorGrayish"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="@string/orkney_regular"/>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        />
+        <include
+            android:id="@+id/layout_no_data_found"
+            layout="@layout/layout_no_data_found"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+    <LinearLayout
+        android:id="@+id/ll_product_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"/>
+    </HorizontalScrollView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBgGray"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_write_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/write_message"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:maxLines="3"
+                android:minLines="1"
+                android:textColor="@color/colorMessageText"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/_13ssp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/iv_attachments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="10dp"
+                android:src="@drawable/ic_chat_attachment"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="10dp"
+                android:src="@drawable/ic_chat_camera"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/iv_send_messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:padding="10dp"
+                android:src="@drawable/ic_chat_send"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_leave_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/_5sdp"
+            android:text="You can\'t send messages to this group because you\'re no longer a participant."
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+    </FrameLayout>
+</LinearLayout>

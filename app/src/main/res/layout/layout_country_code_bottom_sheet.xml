@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:background="@drawable/bg_tutorials"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    android:visibility="gone"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <com.shopoholic.customviews.CustomEditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/round_corner_grey_stroke_transparent_bg"
+        android:hint="@string/search_country"
+        android:imeOptions="actionDone"
+        android:inputType="textCapCharacters"
+        android:maxLength="20"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:visibility="gone"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="RtlSymmetry" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_country_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@android:color/transparent"
+        android:scrollbars="none" />
+</LinearLayout>

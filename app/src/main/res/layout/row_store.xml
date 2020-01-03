@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorGreen"
+    android:padding="@dimen/_5sdp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_store_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_placeholder"
+            tools:ignore="ContentDescription" />
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/ll_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cv_image"
+        android:layout_toStartOf="@+id/cb_store"
+        android:orientation="horizontal">
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_merchant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:maxWidth="@dimen/_100sdp"
+        android:textColor="@color/colorLightWhite"
+        android:textSize="@dimen/_11ssp"
+        app:fontName="@string/orkney_medium" />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_store_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_10ssp"
+        app:fontName="@string/orkney_medium" />
+    </LinearLayout>
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_store_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_store"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toEndOf="@+id/cv_image"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableStart="@drawable/ic_shoppers_buddy_list_llocation"
+        android:layout_toStartOf="@+id/cb_store"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/colorHintText"
+        android:textSize="@dimen/_10ssp" />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_map_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_store_address"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toEndOf="@+id/cv_image"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableStart="@drawable/ic_open_map"
+        android:textColor="@color/colorHintText"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="visible"
+        android:layout_toStartOf="@+id/cb_store"
+        app:fontName="@string/orkney_medium"
+        tools:ignore="ContentDescription" />
+
+    <CheckBox
+        android:id="@+id/cb_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_7sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:background="@android:color/transparent"
+        android:button="@drawable/custom_category_check_box"
+        android:gravity="center_vertical"
+        android:layoutDirection="rtl"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>

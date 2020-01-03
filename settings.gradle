@@ -1,0 +1,2 @@
+include ':app', ':imagecropper', ':googlelibrary', ':fblibrary', ':locationlibrary', ':gifprogressbar', ':amazons3library', ':rangeseekbar',
+        ':multiplemediapicker', ':imagepreviewlibrary', ':contactsyncinglibrary', ':socketlibrary', ':ratingbar', ':cameraandgallery', ':showcaseviewlib'

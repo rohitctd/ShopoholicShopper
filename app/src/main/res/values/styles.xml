@@ -1,0 +1,113 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextAppearance">@style/MenuItemTextAppearance</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:textSelectHandleLeft">@drawable/zero_px_transparent</item>
+        <item name="android:textSelectHandleRight">@drawable/zero_px_transparent</item>
+        <item name="android:textSelectHandle">@drawable/zero_px_transparent</item>
+
+    </style>
+
+    <!-- Base application theme with no action bar -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextAppearance">@style/MenuItemTextAppearance</item>
+        <item name="android:textSelectHandleLeft">@drawable/zero_px_transparent</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:textSelectHandleRight">@drawable/zero_px_transparent</item>
+        <item name="android:textSelectHandle">@drawable/zero_px_transparent</item>
+
+    </style>
+
+    <!-- Base application theme with no action bar -->
+    <style name="AppThemeNoActionBarTranslucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextAppearance">@style/MenuItemTextAppearance</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:textSelectHandleLeft">@drawable/zero_px_transparent</item>
+        <item name="android:textSelectHandleRight">@drawable/zero_px_transparent</item>
+        <item name="android:textSelectHandle">@drawable/zero_px_transparent</item>
+
+
+    </style>
+
+    <!-- Date picker theme. -->
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="AppThemeNoActionBarTranslucent">
+        <item name="android:windowBackground">@drawable/splash_layer</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!--dialog bottom animation-->
+    <style name="DialogBottomAnimation">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_up_out</item>
+    </style>
+
+    <!--dialog bounce animation-->
+    <style name="DialogBounceAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <!--user status spinner theme-->
+    <style name="userStatusSpinnerTheme" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <!--<item name="app:fontName">@string/orkney_medium</item>-->
+    </style>
+
+    <!--buddy rating bar-->
+    <style name="buddyRatingBar" parent="@android:style/Widget.RatingBar">
+        <!--<item name="android:progressDrawable">@drawable/ic_my_order_rating</item>-->
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+        <item name="android:height">24dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MenuItemTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+    <style name="CheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="SeekbarStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:thumb">@drawable/custom_seekbar_thumb</item>
+        <item name="android:minHeight">5dp</item>
+        <item name="android:maxHeight">4dp</item>
+        <item name="android:progressDrawable">@drawable/custom_progress_white</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shopoholic.customviews.CustomTextView
+    android:id="@+id/layout_no_data_found"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    android:drawablePadding="@dimen/_10sdp"
+    android:drawableTop="@drawable/ic_no_data"
+    android:background="@android:color/transparent"
+    android:textColor="@android:color/white"
+    app:fontName="@string/orkney_bold"
+    android:textSize="@dimen/_14ssp"/>

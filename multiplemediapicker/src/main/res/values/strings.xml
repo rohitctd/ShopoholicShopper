@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Multiple-Media-Picker</string>
+    <string name="camera">Camera</string>
+    <string name="select">selectall</string>
+    <string name="action_settings">Settings</string>
+    <string name="you_can_select_only">you can select only</string>
+</resources>

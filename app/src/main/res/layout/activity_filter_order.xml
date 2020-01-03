@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_login"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_toolbar"
+        layout="@layout/layout_login_toolbar">
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/rl_filter_order_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhiteTransparent">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_filter_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:text="@string/order_status"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_13ssp"
+            app:fontName="@string/orkney_medium"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/rg_order_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_filter_order_status"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_13sdp"
+                android:checked="true"
+                android:text="@string/all"
+                android:ellipsize="end"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="RtlSymmetry"/>
+
+            <RadioButton
+                android:id="@+id/rb_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_13sdp"
+                android:text="@string/pending_status"
+                android:ellipsize="end"
+                android:textColor="@color/colorHintText"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="RtlSymmetry"/>
+
+            <RadioButton
+                android:id="@+id/rb_confirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_13sdp"
+                android:text="@string/confirmed"
+                android:ellipsize="end"
+                android:textColor="@color/colorHintText"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="RtlSymmetry"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_below="@+id/rg_order_status"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_delivered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="@dimen/_15sdp"
+                android:ellipsize="end"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_13sdp"
+                android:checked="false"
+                android:text="@string/delivered"
+                android:textColor="@color/colorHintText"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="RtlSymmetry"/>
+
+            <RadioButton
+                android:id="@+id/rb_out_for_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_13sdp"
+                android:ellipsize="end"
+                android:text="@string/out_for_delivery"
+                android:textColor="@color/colorHintText"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="RtlSymmetry"/>
+
+            <RadioButton
+                android:id="@+id/rb_rejected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:button="@drawable/custom_radio_button"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingStart="@dimen/_4sdp"
+                android:ellipsize="end"
+                android:paddingTop="@dimen/_13sdp"
+                android:text="@string/rejected"
+                android:textColor="@color/colorHintText"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="RtlSymmetry"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_date_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/colorWhiteTransparent">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_date_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:text="@string/date_range"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_13ssp"
+            app:fontName="@string/orkney_medium"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_date_range"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_date_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_start_range"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_shoppers_other_info_calender"
+                    android:textColorHint="@color/colorHintText"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:hint="@string/start_date"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontName="@string/orkney_regular"
+                    tools:ignore="HardcodedText"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@color/colorHintText"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawableEnd="@drawable/ic_shoppers_other_info_calender"
+                    android:hint="@string/end_date"
+                    android:textColorHint="@color/colorHintText"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_12ssp"
+                    app:fontName="@string/orkney_regular"
+                    tools:ignore="HardcodedText"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:background="@color/colorHintText"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <com.shopoholic.customviews.CustomButton
+        android:id="@+id/btn_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/ic_button"
+        android:paddingTop="@dimen/_10sdp"
+        android:text="@string/apply"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15ssp"
+        android:visibility="visible"
+        app:fontName="@string/orkney_bold"/>
+
+</LinearLayout>

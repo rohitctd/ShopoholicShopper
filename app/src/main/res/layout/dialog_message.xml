@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_20sdp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorMessageTitle"
+            android:textSize="@dimen/_18ssp"
+            app:fontName="@string/orkney_bold"
+            tools:text="@string/dummy_text" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/colorMessageText"
+            android:textSize="@dimen/_12ssp"
+            app:fontName="@string/orkney_regular"
+            tools:text="@string/dummy_text_short" />
+
+        <com.shopoholic.customviews.CustomButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_button"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13sdp"
+            app:fontName="@string/orkney_bold" />
+
+        <View
+            android:id="@+id/view_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:visibility="gone"
+            android:background="@drawable/black_overlay"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:textColor="@color/colorMessageTitle"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_medium"
+            android:text="@string/cancel" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

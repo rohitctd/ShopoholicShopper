@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content" >
+<com.shopoholic.customviews.CustomTextView
+    android:id="@+id/tv_marker"
+    android:layout_width="@dimen/_30sdp"
+    android:layout_height="@dimen/_30sdp"
+    tools:text="100"
+    android:gravity="center"
+    android:layout_margin="@dimen/_5sdp"
+    android:textColor="@android:color/white"
+    app:fontName="@string/orkney_bold"
+    android:background="@drawable/blue_circle"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:textSize="@dimen/_10ssp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"/>
+</FrameLayout>

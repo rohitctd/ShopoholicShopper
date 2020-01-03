@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Amazon S3 Library</string>
+    <string name="file_not_found_for_send">找不到档案. 可能已被删除或移除.</string>
+</resources>

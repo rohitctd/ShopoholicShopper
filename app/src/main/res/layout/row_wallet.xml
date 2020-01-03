@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/iv_product_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_placeholder"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@color/grayBg"
+            tools:ignore="ContentDescription"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_product_image"
+            android:padding="@dimen/_1sdp"
+            android:layout_toStartOf="@+id/tv_product_price"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            app:fontName="@string/orkney_medium"
+            tools:text="@string/dummy_text"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_product_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_1sdp"
+            android:layout_toEndOf="@+id/iv_product_image"
+            android:layout_below="@+id/tv_product_name"
+            android:layout_toStartOf="@+id/tv_product_price"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_11ssp"
+            app:fontName="@string/orkney_regular"
+            tools:text="@string/dummy_text"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_order_product_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_1sdp"
+            android:layout_toEndOf="@+id/iv_product_image"
+            android:layout_below="@+id/tv_product_number"
+            android:layout_toStartOf="@+id/tv_product_price"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/_11ssp"
+            app:fontName="@string/orkney_medium"
+            tools:text="@string/dummy_text"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_order_place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_1sdp"
+            android:layout_toEndOf="@+id/iv_product_image"
+            android:layout_below="@+id/tv_order_product_date"
+            android:layout_toStartOf="@+id/tv_product_price"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/_11ssp"
+            app:fontName="@string/orkney_medium"
+            tools:text="@string/dummy_text"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_1sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_11ssp"
+            app:fontName="@string/orkney_medium"
+            tools:text="@string/dummy_text"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:background="@drawable/black_overlay"/>
+</LinearLayout>

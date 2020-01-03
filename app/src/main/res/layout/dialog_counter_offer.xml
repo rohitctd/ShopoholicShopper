@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_20sdp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_message_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="@string/make_an_offer"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_medium"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_accept_reject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/_95sdp"
+                android:id="@+id/layout_accept_button"
+                android:layout_height="@dimen/_95sdp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent">
+
+                <com.shopoholic.customviews.CustomButton
+                    android:id="@+id/btn_accept"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blue_button_circle"
+                    android:gravity="center"
+                    android:text="@string/accept"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="visible"
+                    app:fontName="@string/orkney_bold"/>
+
+                <View
+                    android:id="@+id/accept_button_dot"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_8ssp"
+                    android:background="@drawable/ic_loader_element"
+                    android:visibility="visible"/>
+            </FrameLayout>
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/_95sdp"
+                android:id="@+id/layout_reject_button"
+                android:layout_height="@dimen/_95sdp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent">
+
+                <com.shopoholic.customviews.CustomButton
+                    android:id="@+id/btn_reject"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pink_circle"
+                    android:gravity="center"
+                    android:text="@string/reject"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="visible"
+                    app:fontName="@string/orkney_bold"/>
+
+                <View
+                    android:id="@+id/reject_button_dot"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_8ssp"
+                    android:background="@drawable/pink_circle"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/_95sdp"
+                android:id="@+id/layout_counter_button"
+                android:layout_height="@dimen/_95sdp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent">
+
+                <com.shopoholic.customviews.CustomButton
+                    android:id="@+id/btn_counter"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blue_button_circle"
+                    android:gravity="center"
+                    android:text="@string/counter"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="visible"
+                    app:fontName="@string/orkney_bold"/>
+
+                <View
+                    android:id="@+id/counter_button_dot"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_8ssp"
+                    android:background="@drawable/ic_loader_element"
+                    android:visibility="visible"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

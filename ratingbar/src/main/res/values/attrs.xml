@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatingBar">
+        <attr name="rb_max_count" format="integer"/>
+        <attr name="rb_count" format="integer"/>
+        <attr name="rb_fill" format="reference"/>
+        <attr name="rb_empty" format="reference"/>
+        <attr name="rb_space" format="dimension"/>
+        <attr name="rb_click_rating" format="boolean"/>
+        <attr name="rb_touch_rating" format="boolean"/>
+    </declare-styleable>
+</resources>

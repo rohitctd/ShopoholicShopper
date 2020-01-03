@@ -1,0 +1,52 @@
+[
+  {
+    "CountryID": 90,
+    "CountryEnglishName": "Hong Kong",
+    "CountryLocalName": "",
+    "Currency": "HK$",
+    "CountryFlag": "hong-kong.png",
+    "ISOCode": "HK",
+    "CountryCode": "+852",
+    "CurrencyCode": "HKD"
+  },
+  {
+    "CountryID": 93,
+    "CountryEnglishName": "India",
+    "CountryLocalName": "India",
+    "CountryFlag": "india.png",
+    "Currency": "₹",
+    "ISOCode": "IN",
+    "CountryCode": "+91",
+    "CurrencyCode": "INR"
+  },
+  {
+    "CountryID": 118,
+    "CountryEnglishName": "Macau",
+    "CountryLocalName": "",
+    "CountryFlag": "",
+    "Currency": "HK$",
+    "ISOCode": "MO",
+    "CountryCode": "+853",
+    "CurrencyCode": "HKD"
+  },
+  {
+    "CountryID": 184,
+    "CountryEnglishName": "Singapore",
+    "CountryLocalName": "",
+    "CountryFlag": "singapore.png",
+    "Currency": "S$",
+    "ISOCode": "SG",
+    "CountryCode": "+65",
+    "CurrencyCode": "SGD"
+  },
+  {
+    "CountryID": 216,
+    "CountryEnglishName": "UAE",
+    "CountryLocalName": "",
+    "CountryFlag": "united-arab-emirates.png",
+    "Currency": "‎د.إ",
+    "ISOCode": "AE",
+    "CountryCode": "+971",
+    "CurrencyCode": "AED"
+  }
+]

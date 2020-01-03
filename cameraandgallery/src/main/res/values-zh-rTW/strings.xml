@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CameraAndGallery</string>
+    <string name="gallery">圖庫</string>
+    <string name="you_can_select_only">你只能選擇</string>
+    <string name="no_data_available">沒有資料可用</string>
+    <string name="select_one_image">請選擇最少一張圖片</string>
+    <string name="sorry_image_capture_fail">對不起! 影像擷取失敗</string>
+
+    <string name="switch_flash">切換閃光燈</string>
+    <string name="switch_camera">切換照相機</string>
+    <string name="flash_auto">閃光燈自動</string>
+    <string name="flash_off">閃光燈關閉</string>
+    <string name="flash_on">閃光燈開啟</string>
+    <string name="camera_permission_not_granted">請允許使用照相機權限</string>
+    <string name="cannot_take_image">因記憶體不足,不能建立圖像</string>
+    <string name="unable_to_take_image">不能採用圖片</string>
+
+</resources>

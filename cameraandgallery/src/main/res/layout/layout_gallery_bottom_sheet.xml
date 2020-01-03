@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clipToPadding="true"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:visibility="visible"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:id="@+id/ll_horizontal_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+ <android.support.v7.widget.RecyclerView
+     android:id="@+id/rv_horizontal_gallery"
+     android:layout_width="match_parent"
+     android:layout_height="@dimen/_100sdp"
+     android:alpha="1"
+     android:layout_marginTop="@dimen/_15sdp"
+     android:nestedScrollingEnabled="true"
+     android:overScrollMode="never"
+     android:scrollbars="none"
+     android:background="@android:color/transparent"
+     tools:targetApi="lollipop"/>
+        <FrameLayout
+            android:layout_gravity="bottom"
+            android:id="@+id/control"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rv_horizontal_gallery"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/switch_flash"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/ic_flash_auto"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/take_picture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/drawable_camera"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/switch_camera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="@dimen/_10sdp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/ic_switch_camera"
+                tools:ignore="ContentDescription"/>
+
+
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_camera_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            app:fabSize="auto"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_check_white_48dp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_full_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:alpha="1"
+        android:visibility="gone"
+        android:background="@android:color/black">
+
+            <FrameLayout
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_back"
+                    tools:ignore="ContentDescription"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/gallery"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    />
+            </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_gallery"
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:nestedScrollingEnabled="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@android:color/transparent"
+            tools:targetApi="lollipop"/>
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_data_available"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:fabSize="auto"
+            android:padding="5dp"
+            android:src="@drawable/ic_check_white_48dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

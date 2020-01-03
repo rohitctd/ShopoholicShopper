@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "1050064253444",
+    "firebase_url": "https://shopoholic-development.firebaseio.com",
+    "project_id": "shopoholic-development",
+    "storage_bucket": "shopoholic-development.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050064253444:android:1fbaa914ffc40ec7",
+        "android_client_info": {
+          "package_name": "com.shopoholic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050064253444-mkd2vva4g68l59gj84soa834j1tq29pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXCwMSRUuWIFcw5v88EfzTXxy1VY-H0Bc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050064253444:android:3cae4b41b04758b8",
+        "android_client_info": {
+          "package_name": "com.shopoholicbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050064253444-mkd2vva4g68l59gj84soa834j1tq29pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXCwMSRUuWIFcw5v88EfzTXxy1VY-H0Bc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

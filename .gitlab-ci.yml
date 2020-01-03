@@ -1,0 +1,24 @@
+stages:
+  - test
+  - build
+  
+unitTests:
+  stage: test
+  script:
+    - ./gradlew test
+    
+  tags:
+   - anything
+  
+build:
+  stage: build
+  script:
+    - ./gradlew assembleDebug
+  artifacts:
+    paths:
+    - app/build/outputs/
+  tags:
+   - anything
+    
+  only:
+    - master

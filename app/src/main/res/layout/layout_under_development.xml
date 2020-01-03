@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shopoholic.customviews.CustomTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:text="@string/under_development"
+    android:background="@drawable/bg_login"
+    android:textSize="@dimen/_20sdp"
+    app:fontName="@string/orkney_bold"
+    android:textColor="@android:color/white"
+    android:gravity="center"/>

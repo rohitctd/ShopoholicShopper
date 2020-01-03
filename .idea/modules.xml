@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ShopoholicShopper.iml" filepath="$PROJECT_DIR$/ShopoholicShopper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/amazons3library/amazons3library.iml" filepath="$PROJECT_DIR$/amazons3library/amazons3library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cameraandgallery/cameraandgallery.iml" filepath="$PROJECT_DIR$/cameraandgallery/cameraandgallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contactsyncinglibrary/contactsyncinglibrary.iml" filepath="$PROJECT_DIR$/contactsyncinglibrary/contactsyncinglibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fblibrary/fblibrary.iml" filepath="$PROJECT_DIR$/fblibrary/fblibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gifprogressbar/gifprogressbar.iml" filepath="$PROJECT_DIR$/gifprogressbar/gifprogressbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/googlelibrary/googlelibrary.iml" filepath="$PROJECT_DIR$/googlelibrary/googlelibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagecropper/imagecropper.iml" filepath="$PROJECT_DIR$/imagecropper/imagecropper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imagepreviewlibrary/imagepreviewlibrary.iml" filepath="$PROJECT_DIR$/imagepreviewlibrary/imagepreviewlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/locationlibrary/locationlibrary.iml" filepath="$PROJECT_DIR$/locationlibrary/locationlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiplemediapicker/multiplemediapicker.iml" filepath="$PROJECT_DIR$/multiplemediapicker/multiplemediapicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rangeseekbar/rangeseekbar.iml" filepath="$PROJECT_DIR$/rangeseekbar/rangeseekbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ratingbar/ratingbar.iml" filepath="$PROJECT_DIR$/ratingbar/ratingbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/showcaseviewlib/showcaseviewlib.iml" filepath="$PROJECT_DIR$/showcaseviewlib/showcaseviewlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/socketlibrary/socketlibrary.iml" filepath="$PROJECT_DIR$/socketlibrary/socketlibrary.iml" />
+    </modules>
+  </component>
+</project>

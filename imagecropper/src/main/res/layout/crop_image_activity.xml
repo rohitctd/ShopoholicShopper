@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/tool_crop_image"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/done_cancel_bar"
+        layout="@layout/crop__layout_done_cancel" />
+
+
+    <appinventiv.com.imagecropper.cicularcropper.CropImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cropScaleType="fitCenter"/>
+
+</LinearLayout>

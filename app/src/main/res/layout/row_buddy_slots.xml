@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:background="@drawable/round_corner_purple_stroke_transparent_bg"
+    android:orientation="horizontal"
+    android:padding="@dimen/_3sdp">
+
+
+    <!--android:background="@drawable/round_corner_purple_stroke_transparent_bg"-->
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_7sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_7sdp"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@android:color/white"
+        tools:text="12/08/2018 10:00 AM - 12/08/2018 11:00 AM" />
+
+    <ImageView
+        android:id="@+id/iv_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_2sdp"
+        android:visibility="visible"
+        android:src="@drawable/ic_chat_dots"
+        tools:ignore="ContentDescription" />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_alignEnd="@+id/iv_options"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/round_corner_white_bg_with_shadow"
+        android:text="@string/edit" />
+
+</RelativeLayout>

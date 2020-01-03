@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CameraAndGallery</string>
+    <string name="gallery">Gallery</string>
+    <string name="you_can_select_only">you can select only</string>
+    <string name="no_data_available">No data available</string>
+    <string name="select_one_image">Please select at least one image.</string>
+    <string name="sorry_image_capture_fail">Sorry! Failed to capture image</string>
+
+    <string name="switch_flash">Switch flash</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+    <string name="camera_permission_not_granted">Please allow camera permission.</string>
+    <string name="cannot_take_image">Cannot take image due to low memory</string>
+    <string name="unable_to_take_image">Unable to take image</string>
+
+</resources>

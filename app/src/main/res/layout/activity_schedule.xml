@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    tools:mContext="com.shopoholic.activities.ScheduleActivity">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_year_month"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_previous_year"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            tools:text="@string/month_january"
+            android:drawableStart="@drawable/ic_back"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_current_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            tools:text="@string/month_feburary"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_next_year"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:singleLine="true"
+            android:drawableEnd="@drawable/ic_arrow_white"
+            tools:text="@string/month_march"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_week_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day_sun"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day_mon"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day_tue"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day_wed"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day_thu"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day_fri"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day_sat"
+            android:textColor="@color/colorLightWhite"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+
+    <com.shopoholic.calendar.CalendarLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:calendar_type="open">
+
+        <com.shopoholic.calendar.CalendarDateView
+            android:id="@+id/calendarDateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_login"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_shopper_selected_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10sdp"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_13ssp"
+                    app:fontName="@string/orkney_bold"
+                    tools:text="DUMMY DATE" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_add_slots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/toolbar_circle"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_add"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/colorLightWhite"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    app:fontName="@string/orkney_regular" />
+
+            </FrameLayout>
+
+            <com.shopoholic.customviews.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/slots"
+                android:textColor="@color/colorLightWhite"
+                android:textSize="@dimen/_17ssp"
+                android:visibility="gone"
+                app:fontName="@string/orkney_bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorAccent"
+                android:visibility="visible" />
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp" />
+
+                <include
+                    android:id="@+id/layout_no_data_found"
+                    layout="@layout/layout_no_data_found" />
+
+                <include
+                    android:id="@+id/progressBar"
+                    layout="@layout/layout_progress_bar" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </com.shopoholic.calendar.CalendarLayout>
+
+
+</LinearLayout>

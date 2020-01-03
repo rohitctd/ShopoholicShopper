@@ -1,0 +1,131 @@
+{
+  "project_info": {
+    "project_number": "763591579389",
+    "firebase_url": "https://shopoholic-live.firebaseio.com",
+    "project_id": "shopoholic-live",
+    "storage_bucket": "shopoholic-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763591579389:android:1fbaa914ffc40ec7",
+        "android_client_info": {
+          "package_name": "com.shopoholic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763591579389-1kj5jkpjg397c992tif71dnudvjv6f1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopoholic",
+            "certificate_hash": "f3e5fc1465e1d28c5279abd422239a3d643e22f9"
+          }
+        },
+        {
+          "client_id": "763591579389-0h8ph7b1a3vkpem9lmabooun8s1bfraf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopoholic",
+            "certificate_hash": "6657b14d2f73a331a30b909b2b0e53c0bfd44c8c"
+          }
+        },
+        {
+          "client_id": "763591579389-l70vek3hir48o3undej85lgs4lrl3bol.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopoholic",
+            "certificate_hash": "e0dd83b9a9c454d09d0f852c835cbde9d2d16afe"
+          }
+        },
+        {
+          "client_id": "763591579389-bsk8peo9t498are6fete8vrndkdrcee5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxRKrMrTdIGSW1kpw7vgH0JN097p5NwII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763591579389-89brdj4095vb4479k2mfienecic69ico.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "763591579389-gsdph5ne820q7f4oedruv6b9g9qkibac.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ShopoholicShopper.com"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763591579389:android:3cae4b41b04758b8",
+        "android_client_info": {
+          "package_name": "com.shopoholicbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763591579389-p1tr34jkco0cencbas1l3mn75i1uhpgk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopoholicbuddy",
+            "certificate_hash": "f3e5fc1465e1d28c5279abd422239a3d643e22f9"
+          }
+        },
+        {
+          "client_id": "763591579389-3djvrh470kg7qge09cq876bnpiulc6cm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopoholicbuddy",
+            "certificate_hash": "6657b14d2f73a331a30b909b2b0e53c0bfd44c8c"
+          }
+        },
+        {
+          "client_id": "763591579389-sght0468arjr0ubvmlnag5ae99qosrra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shopoholicbuddy",
+            "certificate_hash": "e0dd83b9a9c454d09d0f852c835cbde9d2d16afe"
+          }
+        },
+        {
+          "client_id": "763591579389-bsk8peo9t498are6fete8vrndkdrcee5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxRKrMrTdIGSW1kpw7vgH0JN097p5NwII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763591579389-89brdj4095vb4479k2mfienecic69ico.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "763591579389-gsdph5ne820q7f4oedruv6b9g9qkibac.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ShopoholicShopper.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

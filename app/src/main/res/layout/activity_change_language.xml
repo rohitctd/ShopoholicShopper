@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_login_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_15sdp">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/english"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_regular" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_chinese_trad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/chinees_trad"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_regular" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_chinese_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/chinees_simplefied"
+            android:visibility="visible"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_regular" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_malyalm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/malyalm"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_regular" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_hindi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/hindi"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_regular" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_arabic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/Arebic"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15ssp"
+            app:fontName="@string/orkney_regular" />
+    </LinearLayout>
+
+</LinearLayout>
+
+    <include
+        layout="@layout/layout_progress_bar"/>
+</FrameLayout>

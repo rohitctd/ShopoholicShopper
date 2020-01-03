@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_3sdp"
+        android:paddingEnd="@dimen/_3sdp"
+        >
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/iv_status"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableStart="@drawable/ic_home_buddy_location_ic"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:textColor="@color/colorHomeLocation"
+            android:textSize="@dimen/_11ssp"
+            app:fontName="@string/orkney_medium"
+            tools:text="@string/dummy_text" />
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableEnd="@drawable/ic_home_buddy_available_dropdown"
+            android:drawablePadding="@dimen/_3sdp"
+            android:drawableStart="@drawable/ic_home_buddy_available_circle"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/active"
+            android:textColor="@color/colorMessageText"
+            android:textSize="@dimen/_11sdp"
+            app:fontName="@string/orkney_medium"
+            tools:ignore="RelativeOverlap" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_status"
+            android:layout_width="@dimen/_6sdp"
+            android:layout_height="@dimen/_6sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/tv_status"
+            android:src="@color/colorGreen"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_show_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/ic_home_buddy_all_purple"
+            tools:ignore="ContentDescription" />
+
+<!--
+        <ImageView
+            android:id="@+id/iv_map_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_home_purple_filter"
+            tools:ignore="ContentDescription" />
+
+-->
+        <FrameLayout
+            android:id="@+id/fl_menu_right_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/menu_right_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:src="@drawable/ic_home_purple_filter"
+                android:visibility="visible"
+                tools:ignore="ContentDescription" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_filter_count"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:background="@drawable/toolbar_circle"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorHomeSeparator" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:visibility="gone"
+            android:scrollbars="none" />
+
+        <FrameLayout
+            android:id="@+id/fl_map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rv_categories"
+            android:background="@android:color/white">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_map_deals"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:overScrollMode="never"
+                android:padding="@dimen/_2sdp"
+                android:scrollbars="none"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rv_categories"
+            android:visibility="visible"
+            android:background="@drawable/bg_login">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent">
+
+                    <android.support.design.widget.CollapsingToolbarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fitsSystemWindows="true"
+                        android:background="@android:color/transparent"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_banners"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:fitsSystemWindows="true"
+                            android:focusableInTouchMode="true"
+                            android:overScrollMode="never"
+                            android:scrollbars="none"
+                            app:layout_collapseMode="none"
+                            android:layout_marginTop="@dimen/_6sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            tools:targetApi="lollipop" />
+                    </android.support.design.widget.CollapsingToolbarLayout>
+                </android.support.design.widget.AppBarLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rv_categories"
+                    android:visibility="visible"
+                    android:background="@android:color/transparent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:id="@+id/swipe_refresh_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_deals"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:overScrollMode="never"
+                            android:padding="@dimen/_2sdp"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:scrollbars="none"
+                            android:visibility="visible" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                    <include
+                        android:id="@+id/layout_no_data_found"
+                        layout="@layout/layout_no_data_found"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+            </android.support.design.widget.CoordinatorLayout>
+        </FrameLayout>
+
+        <include
+            android:id="@+id/progressBar"
+            layout="@layout/layout_progress_bar" />
+
+    </RelativeLayout>
+
+</LinearLayout>

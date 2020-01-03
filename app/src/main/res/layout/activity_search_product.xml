@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_login_toolbar" />
+        <!--
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toolbar_gradient"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    tools:ignore="ContentDescription" />
+
+                <com.shopoholic.customviews.CustomEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iv_back"
+                    android:layout_toStartOf="@+id/tv_search"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    app:fontName="@string/orkney_regular"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:maxLength="50"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:textColor="@android:color/black"
+                    android:ellipsize="end"
+                    android:hint="@string/search_products_and_services"
+                    android:textSize="@dimen/_13ssp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:drawableStart="@drawable/places_ic_search"
+                    android:background="@drawable/round_corner_white_bg"/>
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorLightWhite"
+                    android:text="@string/search"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_10sdp"/>
+            </RelativeLayout>
+        -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_grey_stroke_transparent_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:visibility="visible">
+
+                <com.shopoholic.customviews.CustomEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/iv_cross"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableStart="@drawable/places_ic_search"
+                    android:hint="@string/search_products_and_services"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="@dimen/_11sdp"
+                    tools:ignore="RtlSymmetry" />
+
+                <ImageView
+                    android:id="@+id/iv_cross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_add_deal_cross"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/search"
+                android:textColor="@color/colorLightWhite"
+                android:textSize="@dimen/_11ssp" />
+        </LinearLayout>
+
+
+        <com.shopoholic.customviews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/recent_searches"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/_10ssp" />
+
+        <include layout="@layout/layout_recycle_view" />
+    </LinearLayout>
+
+</FrameLayout>

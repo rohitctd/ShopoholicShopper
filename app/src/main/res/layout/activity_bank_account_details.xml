@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_back"
+        tools:ignore="ContentDescription" />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="@string/bank_account_details"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        app:fontName="@string/orkney_medium" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_choose_bank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_signup_dropdown"
+                android:gravity="center"
+                android:hint="@string/choose_bank"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="45"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="@string/orkney_regular" />
+
+            <View
+                android:id="@+id/view_choose_bank"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:background="@color/colorSeparator" />
+
+            <com.shopoholic.customviews.CustomEditText
+                android:id="@+id/et_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/account_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="25"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="@string/orkney_regular" />
+
+            <View
+                android:id="@+id/view_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:background="@color/colorSeparator" />
+
+            <com.shopoholic.customviews.CustomEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:maxLength="45"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="@string/orkney_regular" />
+
+            <View
+                android:id="@+id/view_name"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:background="@color/colorSeparator" />
+
+            <com.shopoholic.customviews.CustomEditText
+                android:id="@+id/et_bank_ifsc_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="@string/bank_ifsc_code"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:maxLength="45"
+                android:maxLines="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorHintText"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="@string/orkney_regular" />
+
+            <View
+                android:id="@+id/view_bank_ifsc_code"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:background="@color/colorSeparator" />
+
+            <include layout="@layout/layout_button_loader" />
+
+            <com.shopoholic.customviews.CustomTextView
+                android:id="@+id/tv_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/round_corner_grey_stroke_transparent_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_50sdp"
+                android:paddingStart="@dimen/_50sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:text="@string/skip"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10ssp"
+                app:fontName="@string/orkney_regular" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

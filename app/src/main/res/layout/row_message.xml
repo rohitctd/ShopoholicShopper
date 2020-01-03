@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_message_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_user_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:src="@drawable/ic_side_menu_user_placeholder"/>
+
+    <LinearLayout
+        android:id="@+id/ll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toEndOf="@+id/civ_user_image"
+        android:layout_toStartOf="@+id/tv_time"
+        android:orientation="vertical">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:fontName="@string/orkney_bold"
+            android:maxLines="1"
+            android:lines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/_15ssp"
+            tools:text="Wayne Daniels"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="gone"
+            app:fontName="@string/orkney_medium"
+            android:textSize="@dimen/_13ssp"
+            android:maxLines="1"
+            android:lines="1"
+            android:ellipsize="end"
+            tools:text="Wayne Daniels"/>
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="1"
+            android:lines="2"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:fontName="@string/orkney_regular"
+            android:textColor="@color/colorHintText"
+            android:textSize="@dimen/_11ssp"
+            tools:text="Lorem ipsum dolor sit amet, eu sea brute civibus, tantas repudiare."/>
+
+
+    </LinearLayout>
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textColor="@color/colorHintText"
+        android:textSize="@dimen/_10ssp"
+        tools:ignore="RelativeOverlap"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:fontName="@string/orkney_regular"
+        tools:text="12:45 AM"/>
+</RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:background="@drawable/black_overlay" />
+</LinearLayout>
+

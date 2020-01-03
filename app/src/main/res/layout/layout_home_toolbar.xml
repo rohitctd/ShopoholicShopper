@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_60sdp"
+    android:background="@drawable/toolbar_gradient"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_25sdp">
+
+        <com.shopoholic.customviews.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13sdp"
+            app:fontName="@string/orkney_medium"
+            tools:text="@string/dummy_text" />
+
+        <FrameLayout
+            android:id="@+id/fl_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_home_cards_menu"
+                tools:ignore="ContentDescription,RtlSymmetry" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_unread"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:src="@android:color/holo_red_dark" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_menu_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <FrameLayout
+                android:id="@+id/fl_menu_right_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/menu_right_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:src="@drawable/ic_home_cards_filter"
+                    android:visibility="visible"
+                    tools:ignore="ContentDescription" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_filter_count"
+                    android:layout_width="@dimen/_8sdp"
+                    android:layout_height="@dimen/_8sdp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/toolbar_circle"
+                    android:gravity="center"
+                    android:text="@string/_4"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/menu_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:src="@drawable/ic_home_cards_filter"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/menu_second_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/fl_menu_right"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_shopper_home_cards_search"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/menu_third_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/menu_second_right"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_home_shopper_share_ic"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

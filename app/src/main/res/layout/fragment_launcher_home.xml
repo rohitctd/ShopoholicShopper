@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabTextColor="@color/colorHintText"
+            app:tabMode="fixed" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/layout_progress_bar"
+        android:id="@+id/progressBar"
+        />
+
+<!--
+    <FrameLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDialogBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+&lt;!&ndash;
+        <ProgressBar
+            style="android.R.style.Widget_ProgressBar_Small"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progressbar_handler"
+            android:padding="@dimen/_5sdp"
+            android:visibility="visible" />
+&ndash;&gt;
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image_loader"
+            style="@style/SpinKitView.Large.ThreeBounce"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@android:color/white" />
+
+
+    </FrameLayout>
+-->
+</FrameLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_buddy_assigned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/fl_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_9sdp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_buddy_image"
+        android:layout_width="@dimen/_49sdp"
+        android:layout_height="@dimen/_49sdp"
+        android:src="@drawable/ic_side_menu_user_placeholder"/>
+
+        <ImageView
+            android:id="@+id/iv_follow_buddy"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_buddy_details_follow"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_buddy_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/round_corner_accept_request"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="@string/request"
+        android:textAllCaps="true"
+        android:textColor="@color/colorLightWhite"
+        android:textSize="@dimen/_10ssp"
+        app:fontName="@string/orkney_medium"
+        />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_buddy_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_toEndOf="@+id/fl_image"
+        android:layout_toStartOf="@+id/tv_buddy_request"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorLightWhite"
+        android:textSize="@dimen/_15ssp"
+        app:fontName="@string/orkney_medium"/>
+
+<!--
+    <RatingBar
+        android:id="@+id/rb_buddy_rating"
+        style="@style/buddyRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_buddy_name"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toEndOf="@+id/fl_image"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="0"
+        />
+-->
+    <com.whinc.widget.ratingbar.RatingBar
+        android:id="@+id/rb_buddy_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:rb_max_count="5"
+        app:rb_count="0"
+        android:layout_below="@+id/tv_buddy_name"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toEndOf="@+id/fl_image"
+        app:rb_empty="@drawable/ic_my_order_rating_unfilled"
+        app:rb_fill="@drawable/ic_my_order_rating"
+        app:rb_space="@dimen/_5sdp"
+        app:rb_click_rating="false"
+        app:rb_touch_rating="false"
+        />
+
+
+
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_buddy_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rb_buddy_rating"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_toEndOf="@+id/fl_image"
+        android:layout_toStartOf="@+id/tv_buddy_request"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableStart="@drawable/ic_shoppers_buddy_list_llocation"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorHintText"
+        android:textSize="@dimen/_11ssp"
+        />
+
+</RelativeLayout>

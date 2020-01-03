@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/_2sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/rl_root_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGrey"
+            android:foreground="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrey"
+                android:foreground="?selectableItemBackground"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_product_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_placeholder"
+                    android:transitionName="simple_activity_transition"
+                    tools:ignore="ContentDescription"
+                    tools:targetApi="lollipop" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:background="@drawable/black_overlay" />
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_shopper_home_like_unfill"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/iv_kyc_coming_soon"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="100dp"
+                    android:src="@drawable/coming_soon_kyc" />
+
+                <com.shopoholic.customviews.CustomTextView
+                    android:id="@+id/tv_expire"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:lines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:visibility="gone"
+                    android:text="@string/expire"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_8ssp"
+                    android:background="@drawable/round_corner_black_bg"
+                    app:fontName="@string/orkney_regular" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.shopoholic.customviews.CustomTextView
+                        android:id="@+id/tv_details"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        app:fontName="@string/orkney_bold"
+                        tools:text="Flat 30% Off on iPhone X" />
+
+                    <com.shopoholic.customviews.CustomTextView
+                        android:id="@+id/product_status"
+                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/per_off"
+                        android:layout_gravity="end|center_vertical"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:lines="1"
+                        android:maxWidth="@dimen/_60sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_8ssp"
+                        app:fontName="@string/orkney_regular" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/fl_user_pic"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:background="@android:color/transparent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/civ_user_image"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/ic_side_menu_user_placeholder" />
+
+                        <View
+                            android:layout_width="@dimen/_5sdp"
+                            android:layout_height="@dimen/_5sdp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/round_corner_white_bg" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_7sdp"
+                        tools:text="John Smith" />
+
+                    <ImageView
+                        android:id="@+id/iv_service_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_home_cards_bag"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

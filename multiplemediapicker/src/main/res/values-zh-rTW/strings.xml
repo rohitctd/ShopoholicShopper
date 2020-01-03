@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Multiple-Media-Picker</string>
+    <string name="camera">照相機</string>
+    <string name="select">全選</string>
+    <string name="action_settings">設定</string>
+    <string name="you_can_select_only">你只能選擇</string>
+</resources>

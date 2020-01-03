@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_more"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toolbar_gradient"
+    android:gravity="end|top"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:visibility="visible"
+        android:alpha="0.5"
+        android:background="@android:color/white" />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_price_high"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="start"
+        android:lines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11ssp"
+        app:fontName="@string/orkney_regular"
+        android:text="@string/price_high_to_low" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:visibility="visible"
+        android:alpha="0.5"
+        android:background="@android:color/white" />
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_price_low"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="start"
+        android:lines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11ssp"
+        app:fontName="@string/orkney_regular"
+        android:text="@string/price_low_to_high" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:visibility="visible"
+        android:alpha="0.5"
+        android:background="@android:color/white" />
+
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_rating_high"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="start"
+        android:lines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11ssp"
+        app:fontName="@string/orkney_regular"
+        android:text="@string/rating_high_to_low" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:visibility="visible"
+        android:alpha="0.5"
+        android:background="@android:color/white" />
+
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_rating_low"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="start"
+        android:lines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11ssp"
+        app:fontName="@string/orkney_regular"
+        android:text="@string/rating_low_to_high" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:visibility="visible"
+        android:alpha="0.5"
+        android:background="@android:color/white" />
+
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="start"
+        android:lines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11ssp"
+        app:fontName="@string/orkney_regular"
+        android:text="@string/newest_first" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:visibility="visible"
+        android:alpha="0.5"
+        android:background="@android:color/white" />
+
+
+    <com.shopoholic.customviews.CustomTextView
+        android:id="@+id/tv_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawablePadding="@dimen/_5sdp"
+        android:gravity="start"
+        android:lines="1"
+        android:minLines="1"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_11ssp"
+        app:fontName="@string/orkney_regular"
+        android:text="@string/oldest_first" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:visibility="visible"
+        android:alpha="0.5"
+        android:background="@android:color/white" />
+
+
+</LinearLayout>

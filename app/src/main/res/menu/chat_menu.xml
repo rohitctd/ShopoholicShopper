@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_one"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title=""
+        android:icon="@drawable/ic_chat_list_add"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menu_item_two"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:title="Menu 1"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menu_item_three"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        android:title="Menu 2"
+        tools:ignore="HardcodedText" />
+
+</menu>

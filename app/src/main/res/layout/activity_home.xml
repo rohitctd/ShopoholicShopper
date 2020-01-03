@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/side_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/profile_toolbar_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@drawable/ic_buddy_details_top_element"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/wallet_toolbar_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_175sdp"
+            android:background="@drawable/ic_my_wallet_top_section"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_toolbar"
+                layout="@layout/layout_home_toolbar"/>
+
+            <FrameLayout
+                android:id="@+id/fl_home_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_login">
+
+        <include layout="@layout/layout_menu_items" />
+
+    </FrameLayout>
+
+</android.support.v4.widget.DrawerLayout>
