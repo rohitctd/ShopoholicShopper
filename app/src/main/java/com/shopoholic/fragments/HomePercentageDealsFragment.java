@@ -337,11 +337,13 @@ public class HomePercentageDealsFragment extends Fragment implements OnMapReadyC
                     case R.id.iv_product_pic:
 //                        AppUtils.getInstance().showToast(mActivity, getString(R.string.under_development));
                         String dealId = product.getId();
+                        String kycStatus = product.getKycStatus();
                         String dealImage = product.getDealImage();
                         dealImage = dealImage.contains(",") ? dealImage.split(",")[0] : dealImage;
                         Intent intent = new Intent(mActivity, ProductServiceDetailsActivity.class);
                         intent.putExtra(Constants.IntentConstant.DEAL_ID, dealId);
                         intent.putExtra(Constants.IntentConstant.DEAL_IMAGE, dealImage);
+                        intent.putExtra(Constants.IntentConstant.KYC_STATUS, kycStatus);
                         ActivityOptionsCompat options = ActivityOptionsCompat
                                 .makeSceneTransitionAnimation(mActivity, view, ViewCompat.getTransitionName(view));
                         HomePercentageDealsFragment.this.startActivityForResult(intent, Constants.IntentConstant.REQUEST_PRODUCT_DEAL, options.toBundle());

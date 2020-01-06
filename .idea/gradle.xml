@@ -8,6 +8,26 @@
         </compositeConfiguration>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/amazons3library" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/cameraandgallery" />
+            <option value="$PROJECT_DIR$/contactsyncinglibrary" />
+            <option value="$PROJECT_DIR$/fblibrary" />
+            <option value="$PROJECT_DIR$/gifprogressbar" />
+            <option value="$PROJECT_DIR$/googlelibrary" />
+            <option value="$PROJECT_DIR$/imagecropper" />
+            <option value="$PROJECT_DIR$/imagepreviewlibrary" />
+            <option value="$PROJECT_DIR$/locationlibrary" />
+            <option value="$PROJECT_DIR$/multiplemediapicker" />
+            <option value="$PROJECT_DIR$/rangeseekbar" />
+            <option value="$PROJECT_DIR$/ratingbar" />
+            <option value="$PROJECT_DIR$/showcaseviewlib" />
+            <option value="$PROJECT_DIR$/socketlibrary" />
+          </set>
+        </option>
         <option name="resolveModulePerSourceSet" value="false" />
         <option name="testRunner" value="PLATFORM" />
       </GradleProjectSettings>
